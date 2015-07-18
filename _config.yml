@@ -8,6 +8,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mitchlindsay.me" # the base hostname & protocol for your site
 github_username:  mitchlindsay
+linkedin_url: "https://www.linkedin.com/pub/mitch-lindsay/58/9a9/b37"
+resume_url: "#"
 
 # Build settings
 markdown: kramdown
