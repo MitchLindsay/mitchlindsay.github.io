@@ -8,6 +8,9 @@ categories: work
 ## [Saint Vincent College](http://www.stvincent.edu)
 **Help Desk Technician** | 2009-2012
 
-* Resolved computer, printer, and network related issues for both students and faculty
+* Resolved computer, printer, and network related issues for faculty members
+* Serviced students' personal laptops
 * Assisted students and professors with classroom technology
-* Consulted with hardware vendors to replace equipment when needed
+* Imaged machines with Windows Deployment Services
+* Replaced computer components and consulted hardware vendors when needed
+* Recorded issues in SupportSuite and KACE ticketing systems

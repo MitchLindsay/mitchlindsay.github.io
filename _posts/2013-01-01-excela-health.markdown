@@ -8,8 +8,10 @@ categories: work
 ## [Excela Health](http://www.excelahealth.org/)
 **Support Center Analyst** | 2013-Present
 
-* Manage user accounts in various computer systems (Active Directory, Cerner, McKesson STAR, etc.)
-* Work with technicial and clinical teams to resolve hardware and software issues
-* Assist patients in accessing their medical records online through the FollowMyHealth patient portal
+* Assist medical staff with medical records applications (Cerner, Allscripts, ePowerDoc, Sunquest)
+* Assist patients with their online medical records in the FollowMyHealth patient portal
+* Manage user accounts in various systems (Active Directory, Cerner, McKesson STAR, etc.)
+* Work with technical and clinical teams to resolve hardware and software issues
+* Run nightly system backups in McKesson STAR
 * Periodically lead daily technical team meetings
-* Run system backups during off-hours
+* Record all issues in HelpSTAR/ServicePro ticketing system
