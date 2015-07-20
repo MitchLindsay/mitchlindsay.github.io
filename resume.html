@@ -1,0 +1,20 @@
+---
+layout: default
+title: Résumé
+permalink: /resume/
+icon: ion-document-text
+order: 2
+---
+<div class="page">
+
+  <article>
+    {% for post in site.categories.resume %}
+
+      <div class="resume-item">
+        {{ post.content }}
+      </div>
+
+    {% endfor %}
+  </article>
+
+</div>
