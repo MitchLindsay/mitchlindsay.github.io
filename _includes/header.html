@@ -12,7 +12,7 @@
           {% assign sorted_pages = site.pages | sort: "order" %}
           {% for node in sorted_pages %}
             {% if node.title %}
-              <span class="icon {{ node.icon }}">&nbsp; <a class="page-link" href="{{ node.url | prepend: site.url }}">{{ node.title }}</a></span>&nbsp;&nbsp;
+              <a class="page-link" href="{{ node.url | prepend: site.url }}"><span class="icon {{ node.icon }}"> {{ node.title }}</span></a>
             {% endif %}
           {% endfor %}
       </div>
