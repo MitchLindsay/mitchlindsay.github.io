@@ -5,7 +5,7 @@ categories: portfolio
 
 #Portfolio#
 
-**Coming Soon!™**
+Coming Soon!™
 
 <!--
 **Portfolio Website**

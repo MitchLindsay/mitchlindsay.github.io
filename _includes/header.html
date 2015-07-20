@@ -4,18 +4,18 @@
     <a class="site-title" href="{{ site.url }}/"><strong>{{ site.name }}</strong></a>
 
     <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <span class="icon ion-navicon-round"></span>
-      </a>
+      {% assign sorted_pages = site.pages | sort: "order" %}
+      {% for node in sorted_pages %}
+        {% if node.title %}
 
-      <div class="trigger">
-          {% assign sorted_pages = site.pages | sort: "order" %}
-          {% for node in sorted_pages %}
-            {% if node.title %}
-              <a class="page-link" href="{{ node.url | prepend: site.url }}"><span class="icon {{ node.icon }}"> {{ node.title }}</span></a>
-            {% endif %}
-          {% endfor %}
-      </div>
+          {% if node.url == page.url %}
+            <a class="page-link" href="{{ node.url | prepend: site.url }}"><span class="icon {{ node.icon }}"> {{ node.title }}</span></a>
+          {% else %}
+            <a class="page-link" href="{{ node.url | prepend: site.url }}"><span class="icon {{ node.icon }}"> {{ node.title }}</span></a>
+          {% endif %}
+
+        {% endif %}
+      {% endfor %}
     </nav>
 
   </div>
