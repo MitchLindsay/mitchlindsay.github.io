@@ -10,16 +10,13 @@ categories: education
 
 **Specialization:** Computer Science
 
-**Cirriculum:**
+**Coursework:**
 
-* Computing & Information Sciences
 * Data Structures
 * Introduction to Artificial Intelligence
 * Database Concepts/Info. Structures
 * Management Information Systems
-* Introduction to Web Design
 * Website Design & Programming
-* Computing Science Project
 * Programming Languages
 * Computer Architecture & Assembly Language
 * Computer Architecture & Operating Systems
