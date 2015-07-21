@@ -18,5 +18,5 @@ categories: work
 * Record all issues in HelpSTAR/ServicePro ticketing system
 
 <br />
-<hr class="small" />
+<hr class ="small" />
 <br />
