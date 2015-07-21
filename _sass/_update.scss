@@ -40,3 +40,12 @@ header.page-header {
 .navbar .navbar-brand {
     color: $link-color;
 }
+
+/**
+*  Modal fix
+*/
+
+body.modal-open {
+overflow-y: scroll;
+padding-right: 0 !important;
+}
