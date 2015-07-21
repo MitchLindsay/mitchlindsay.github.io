@@ -5,19 +5,73 @@ categories: portfolio
 
 <div class="row">
   <div class="col-xs-6 col-md-3">
-    <a href="{{ site.url }}/assets/images/academic_clp_screenshot1.png" class="thumbnail">
-      <img src="{{ site.url }}/assets/images/academic_clp_screenshot1.png" alt="Main Menu Screen">
+    <a href="#" class="thumbnail" data-toggle="modal" data-target="#modal1">
+      <img src="{{ site.url }}/assets/images/academic_clp_screenshot1.png" alt="Main Menu">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
-    <a href="{{ site.url }}/assets/images/academic_clp_screenshot2.png" class="thumbnail">
-      <img src="{{ site.url }}/assets/images/academic_clp_screenshot2.png" alt="Import Data Screen">
+    <a href="#" class="thumbnail" data-toggle="modal" data-target="#modal2">
+      <img src="{{ site.url }}/assets/images/academic_clp_screenshot2.png" alt="Import Data Menu">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
-    <a href="{{ site.url }}/assets/images/academic_clp_screenshot3.png" class="thumbnail">
-      <img src="{{ site.url }}/assets/images/academic_clp_screenshot3.png" alt="Compare Grades Screen">
+    <a href="#" class="thumbnail" data-toggle="modal" data-target="#modal3">
+      <img src="{{ site.url }}/assets/images/academic_clp_screenshot3.png" alt="Compare Grades Menu">
     </a>
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Academic CLP Database - Main Menu</h4>
+      </div>
+      <div class="modal-body">
+        <img src="{{ site.url }}/assets/images/academic_clp_screenshot1.png" alt="Main Menu">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Academic CLP Database - Import Data Menu</h4>
+      </div>
+      <div class="modal-body">
+        <img src="{{ site.url }}/assets/images/academic_clp_screenshot2.png" alt="Import Data Menu">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Academic CLP Database - Compare Grades Menu</h4>
+      </div>
+      <div class="modal-body">
+        <img src="{{ site.url }}/assets/images/academic_clp_screenshot3.png" alt="Compare Grades Menu">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>
 
