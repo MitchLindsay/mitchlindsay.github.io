@@ -94,7 +94,8 @@ to determine the shortest path from the unit to its destination.
 
 * Maps are randomly generated. Currently the map tiles are selected at random using
 a random number generator. Once more terrain types are added to the game, a more
-sophisticated map generation algorithm will be used.
+sophisticated map generation algorithm will be used to allow for more interesting
+map layouts.
 
 * Game and UI states are handled with a state machine. When a state changes, all events
 (selecting a unit, changing turns, panning the camera, etc.) are filtered through
