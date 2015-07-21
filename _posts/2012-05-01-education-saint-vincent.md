@@ -7,7 +7,7 @@ categories: education
 
 [**Saint Vincent College**](http://www.stvincent.edu/)<br />
 **B.S. Computing & Information Sciences** <br />
-**Specialization**: Computer Science<br />
+**Concentration**: Computer Science<br />
 Latrobe, PA | Graduated 2012
 
 **Coursework**:
