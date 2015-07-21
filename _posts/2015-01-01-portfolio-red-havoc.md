@@ -96,6 +96,7 @@ to determine the shortest path from the unit to its destination.
 a random number generator. Once more terrain types are added to the game, perlin noise
 will be implemented to generate more interesting map layouts.
 
-* All events in the game (selecting a unit, changing turns, panning the camera, etc.) are filtered through
+* Game and UI states are handled with a state machine. When a state changes, all events
+(selecting a unit, changing turns, panning the camera, etc.) are filtered through
 an event queue, to ensure that all events happen in the order that they occurred and that they do not
-overlap. The game also utilizes a state machine to determine different UI and turn states.
+overlap.
