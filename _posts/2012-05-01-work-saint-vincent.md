@@ -10,8 +10,8 @@ categories: work
 2009-2012
 
 * Resolved computer, printer, and network related issues for faculty members
-* Serviced students' personal laptops
+* Serviced student personal laptops
 * Assisted students and professors with classroom technology
 * Imaged machines with Windows Deployment Services
-* Replaced computer components and consulted hardware vendors when needed
+* Replaced computer hardware and consulted hardware vendors when needed
 * Recorded issues in SupportSuite and KACE ticketing systems
