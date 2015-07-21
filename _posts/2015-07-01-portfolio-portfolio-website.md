@@ -9,6 +9,7 @@ categories: portfolio
 <span class="label label-primary">Bootstrap</span>
 <span class="label label-primary">CSS</span>
 <span class="label label-primary">HTML</span>
+<span class="label label-primary">JavaScript</span>
 <span class="label label-primary">Jekyll</span><br />
 
 A personal portfolio website that was developed using [Jekyll](http://jekyllrb.com/) and
