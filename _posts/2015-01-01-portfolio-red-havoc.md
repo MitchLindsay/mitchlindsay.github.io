@@ -7,12 +7,12 @@ categories: portfolio
 <div class="row">
   <div class="col-xs-6 col-md-3">
     <a href="#" class="thumbnail" data-toggle="modal" data-target="#red_havoc_modal1">
-      <img src="{{ site.url }}/assets/images/red_havoc_screenshot1.png" alt="Character Movement">
+      <img src="{{ site.url }}/assets/images/red_havoc_screenshot1.png" alt="Moving a Unit">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
     <a href="#" class="thumbnail" data-toggle="modal" data-target="#red_havoc_modal2">
-      <img src="{{ site.url }}/assets/images/red_havoc_screenshot2.png" alt="Executing a Unit Wait Command">
+      <img src="{{ site.url }}/assets/images/red_havoc_screenshot2.png" alt="Issuing a Wait Command">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
@@ -28,10 +28,10 @@ categories: portfolio
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Red Havoc - Character Movement</h4>
+        <h4 class="modal-title" id="myModalLabel">Red Havoc - Moving a Unit</h4>
       </div>
       <div class="modal-body">
-        <img src="{{ site.url }}/assets/images/red_havoc_screenshot1.png" alt="Character Movement">
+        <img src="{{ site.url }}/assets/images/red_havoc_screenshot1.png" alt="Moving a Unit">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -46,10 +46,10 @@ categories: portfolio
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Red Havoc - Executing a Unit Wait Command</h4>
+        <h4 class="modal-title" id="myModalLabel">Red Havoc - Issuing a Command</h4>
       </div>
       <div class="modal-body">
-        <img src="{{ site.url }}/assets/images/red_havoc_screenshot2.png" alt="Executing a Unit Wait Command">
+        <img src="{{ site.url }}/assets/images/red_havoc_screenshot2.png" alt="Issuing a Wait Command">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -76,26 +76,26 @@ categories: portfolio
   </div>
 </div>
 
-**Red Havoc** <br />
+**Red Havoc (Tentative Title)** <br />
 Work in Progress | 2014-2015<br />
 <span class="label label-danger">C#</span>
 <span class="label label-danger">Unity</span><br />
 
-Red Havoc is a 2D turn-based strategy game, developed in Unity with C# for PC/Mac.
-The object of the game is to defeat all of the enemy's units to win. The game features
-several unit and terrain types, each with their own unique stats. Players can currently
-move units and assign them commands.
+* Red Havoc is a 2D turn-based strategy game. It is being developed in Unity with C#
+for the PC. The objective of the game is to gather resources, build units, and defeat
+all of the enemy forces. The game currently features 4 different unit types and 3 different terrain types, each
+with their own unique stats. Players can currently move units and assign them commands.
+Combat, unit building, and resource gathering are in the works.
 
-Since each terrain type has its own movement cost,
-unit movement works by using the [A* search algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
-to generate the shortest path from the selected unit to the mouse cursor. Clicking a tile will
-move the unit along this path to its destination.
+* Unit movement uses a pathfinding algorithm based on a combination of
+[Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search) to determine tiles
+that a unit can move to, and the [A* Search Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
+to determine the shortest path from the unit to its destination.
 
-Maps are randomly generated. Currently, the tiles are only selected using a random number generator.
-Future improvements may include noise for map generation.
+* Maps are randomly generated. Currently the map tiles are selected at random using
+a random number generator. Once more terrain types are added to the game, perlin noise
+will be implemented to generate more interesting map layouts.
 
-All events in the game (selecting a unit, changing turns, panning the camera, etc.) are funneled through
+* All events in the game (selecting a unit, changing turns, panning the camera, etc.) are filtered through
 an event queue, to ensure that all events happen in the order that they occurred and that they do not
 overlap. The game also utilizes a state machine to determine different UI and turn states.
-
-Combat, unit building, and resource gathering are in the works.

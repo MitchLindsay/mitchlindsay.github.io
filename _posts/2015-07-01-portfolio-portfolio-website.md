@@ -11,6 +11,9 @@ categories: portfolio
 <span class="label label-danger">HTML</span>
 <span class="label label-danger">Jekyll</span><br />
 
-A personal portfolio website that was developed using [Jekyll](http://jekyllrb.com/) and
-[Bootstrap](http://getbootstrap.com/). The website is hosted using [GitHub Pages](https://pages.github.com/).
-All icons are from the [Ionic Framework](http://ionicons.com/).
+* I created a personal portfolio website as a place to display more information
+about my coursework, my work experience, and my programming projects.
+
+* The site was developed with [Jekyll](http://jekyllrb.com/) and [Bootstrap](http://getbootstrap.com/).
+The website is currently hosted on [GitHub Pages](https://pages.github.com/). All icons are
+from the [Ionic Framework](http://ionicons.com/) icon font.

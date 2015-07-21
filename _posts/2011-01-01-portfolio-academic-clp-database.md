@@ -11,12 +11,12 @@ categories: portfolio
   </div>
   <div class="col-xs-6 col-md-3">
     <a href="#" class="thumbnail" data-toggle="modal" data-target="#modal2">
-      <img src="{{ site.url }}/assets/images/academic_clp_screenshot2.png" alt="Import Data Menu">
+      <img src="{{ site.url }}/assets/images/academic_clp_screenshot2.png" alt="Importing Data">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
     <a href="#" class="thumbnail" data-toggle="modal" data-target="#modal3">
-      <img src="{{ site.url }}/assets/images/academic_clp_screenshot3.png" alt="Compare Grades Menu">
+      <img src="{{ site.url }}/assets/images/academic_clp_screenshot3.png" alt="Comparing Grades">
     </a>
   </div>
 </div>
@@ -45,10 +45,10 @@ categories: portfolio
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Academic CLP Database - Import Data Menu</h4>
+        <h4 class="modal-title" id="myModalLabel">Academic CLP Database - Importing Data</h4>
       </div>
       <div class="modal-body">
-        <img src="{{ site.url }}/assets/images/academic_clp_screenshot2.png" alt="Import Data Menu">
+        <img src="{{ site.url }}/assets/images/academic_clp_screenshot2.png" alt="Importing Data">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -63,10 +63,10 @@ categories: portfolio
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Academic CLP Database - Compare Grades Menu</h4>
+        <h4 class="modal-title" id="myModalLabel">Academic CLP Database - Comparing Grades</h4>
       </div>
       <div class="modal-body">
-        <img src="{{ site.url }}/assets/images/academic_clp_screenshot3.png" alt="Compare Grades Menu">
+        <img src="{{ site.url }}/assets/images/academic_clp_screenshot3.png" alt="Comparing Grades">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -80,8 +80,11 @@ School Project | 2011<br />
 <span class="label label-danger">Microsoft Access</span>
 <span class="label label-danger">SQL</span><br />
 
-In our Software Engineering class, as a group, we designed and developed a
-Microsoft Access database to keep track of attendance for the Academic CLP (Collaborative Learning Program).
-My responsibilities on the project were the SQL queries and the user interface. The
-database imports data from several Excel spreadsheets and then displays reports
-generated with a wide variety of filters.
+* In our Software Engineering class, as a group, we designed and developed a Microsoft Access
+database to track attendance for the Academic Collaborative Learning Program. My
+responsibilities on the project were the SQL queries and the user interface design.
+
+* The database allows users to import data from Excel into the database. They can
+then generate reports to compare class performance of students who attended the program with
+ those who did not attend. These reports can be parsed through a wide variety of filters to display students of a
+particular major, grade, etc.
