@@ -17,6 +17,7 @@ dl, dd, ol, ul, figure {
 /* Fixed footer */
 html {
     position: relative;
+    overflow: auto;
     min-height: 100%;
 }
 
@@ -29,10 +30,15 @@ body {
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     margin-bottom: 100px;
+    overflow: auto;
+    height: 100%;
     width: 100%;
 }
 
-
+/* unset bs3 setting */
+.modal-open {
+ overflow: auto;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
