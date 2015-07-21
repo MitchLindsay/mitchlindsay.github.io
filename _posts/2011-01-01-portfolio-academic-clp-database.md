@@ -76,7 +76,7 @@ categories: portfolio
 </div>
 
 **Academic CLP Attendance Database** <br />
-2011<br />
+School Project | 2011<br />
 <span class="label label-danger">Microsoft Access</span>
 <span class="label label-danger">SQL</span><br />
 

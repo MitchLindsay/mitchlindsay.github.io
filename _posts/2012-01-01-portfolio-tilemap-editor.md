@@ -4,7 +4,7 @@ categories: portfolio
 ---
 
 **2D Tile Map Editor** <br />
-2011-2012<br />
+School Project | 2011-2012<br />
 <span class="label label-danger">C#</span>
 <span class="label label-danger">Microsoft XNA</span>
 <span class="label label-danger">WinForms</span><br />
