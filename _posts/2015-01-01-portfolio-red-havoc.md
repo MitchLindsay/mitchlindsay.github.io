@@ -93,7 +93,7 @@ that a unit can move to, and the [A* Search Algorithm](https://en.wikipedia.org/
 to determine the shortest path from the unit to its destination.
 
 * Maps are randomly generated. Currently the map tiles are selected at random using
-a random number generator. Once more terrain types are added to the game, perlin noise
+a random number generator. Once more terrain types are added to the game, [Perlin Noise](https://en.wikipedia.org/wiki/Perlin_noise)
 will be implemented to generate more interesting map layouts.
 
 * Game and UI states are handled with a state machine. When a state changes, all events
