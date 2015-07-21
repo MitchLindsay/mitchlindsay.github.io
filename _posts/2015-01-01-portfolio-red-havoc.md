@@ -91,6 +91,9 @@ unit movement works by using the [A* search algorithm](https://en.wikipedia.org/
 to generate the shortest path from the selected unit to the mouse cursor. Clicking a tile will
 move the unit along this path to its destination.
 
+Maps are randomly generated. Currently, the tiles are only selected using a random number generator.
+Future improvements may include noise for map generation.
+
 All events in the game (selecting a unit, changing turns, panning the camera, etc.) are funneled through
 an event queue, to ensure that all events happen in the order that they occurred and that they do not
 overlap. The game also utilizes a state machine to determine different UI and turn states.
