@@ -11,7 +11,7 @@ categories: portfolio
 <span class="label label-danger">HTML</span>
 <span class="label label-danger">Jekyll</span><br />
 
-* I created a personal portfolio website as a place to display more information
+* I created a personal portfolio website as a place to display information
 about my coursework, my work experience, and my programming projects.
 
 * The site was developed with [Jekyll](http://jekyllrb.com/) and [Bootstrap](http://getbootstrap.com/).
