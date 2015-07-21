@@ -83,7 +83,7 @@ Work in Progress | 2014-2015<br />
 
 * Red Havoc is a 2D turn-based strategy game. It is being developed in Unity with C#
 for the PC. The objective of the game is to gather resources, build units, and defeat
-all of the enemy forces. The game currently features 4 different unit types and 3 different terrain types, each
+all of the enemy forces. The game currently features multiple unit and terrain types, each
 with their own unique stats. Players can currently move units and assign them commands.
 Combat, unit building, and resource gathering are in the works.
 
