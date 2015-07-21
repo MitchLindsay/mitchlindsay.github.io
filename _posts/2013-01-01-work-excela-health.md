@@ -16,7 +16,3 @@ categories: work
 * Run nightly system backups in McKesson STAR
 * Periodically lead daily technical team meetings
 * Record all issues in HelpSTAR/ServicePro ticketing system
-
-<br />
-<hr class ="small" />
-<br />

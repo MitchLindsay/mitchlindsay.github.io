@@ -15,7 +15,3 @@ categories: portfolio
 A personal portfolio website that was developed using [Jekyll](http://jekyllrb.com/) and
 [Bootstrap](http://getbootstrap.com/). The website is hosted using [GitHub Pages](https://pages.github.com/).
 All icons are from the [Ionic Framework](http://ionicons.com/).
-
-<br />
-<hr class="small" />
-<br />
