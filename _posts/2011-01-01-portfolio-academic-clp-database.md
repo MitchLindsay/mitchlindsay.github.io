@@ -77,8 +77,8 @@ categories: portfolio
 
 **Academic CLP Attendance Database** <br />
 2011<br />
-<span class="label label-primary">Microsoft Access</span>
-<span class="label label-primary">SQL</span><br />
+<span class="label label-danger">Microsoft Access</span>
+<span class="label label-danger">SQL</span><br />
 
 In our Software Engineering class, as a group, we designed and developed a
 Microsoft Access database to keep track of attendance for the Academic CLP (Collaborative Learning Program).

@@ -78,8 +78,8 @@ categories: portfolio
 
 **Red Havoc** <br />
 Work in Progress | 2014-2015<br />
-<span class="label label-primary">C#</span>
-<span class="label label-primary">Unity</span><br />
+<span class="label label-danger">C#</span>
+<span class="label label-danger">Unity</span><br />
 
 Red Havoc is a 2D turn-based strategy game, developed in Unity with C# for PC/Mac.
 The object of the game is to defeat all of the enemy's units to win. The game features

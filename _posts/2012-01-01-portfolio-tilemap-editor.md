@@ -5,9 +5,9 @@ categories: portfolio
 
 **2D Tile Map Editor** <br />
 2011-2012<br />
-<span class="label label-primary">C#</span>
-<span class="label label-primary">Microsoft XNA</span>
-<span class="label label-primary">WinForms</span><br />
+<span class="label label-danger">C#</span>
+<span class="label label-danger">Microsoft XNA</span>
+<span class="label label-danger">WinForms</span><br />
 
 A map editor for two-dimensional video games. The editor was created for my Senior
 Capstone Project and was created in C# with [Microsoft XNA](https://en.wikipedia.org/wiki/Microsoft_XNA).

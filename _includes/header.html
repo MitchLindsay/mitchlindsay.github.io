@@ -2,7 +2,7 @@
   <div class="wrapper">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+      <div class="wrapper">
 
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -27,6 +27,17 @@
                 {% endif %}
               {% endif %}
             {% endfor %}
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle icon ion-chatbox" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Contact <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="icon ion-email" href="mailto: {{ site.email }}"> Email</a></li>
+                  <li><a class="icon ion-social-linkedin" href="{{ site.linkedin }}"> LinkedIn</span></a></li>
+                  <li><a class="icon ion-social-github" href="{{ site.github }}"> GitHub</span></a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a class="icon ion-document-text" href="{{ site.url }}/{{ site.resume }}"> Résumé</span></a></li>
+                </ul>
+              </li>
 
           </ul>
         </div>
