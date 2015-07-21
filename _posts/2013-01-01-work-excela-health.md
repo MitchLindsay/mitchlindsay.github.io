@@ -5,9 +5,9 @@ categories: work
 
 <img src="{{ site.url }}/assets/images/excela_health_logo.jpg" alt="Excela Health" class="img-rounded">
 
-[**Excela Health**](http://www.excelahealth.org/) <br />
+[**Excela Health**](http://www.excelahealth.org/)<br />
 **Support Center Analyst** <br />
-2013-Present
+Greensburg, PA | 2013-Present
 
 * Assist medical staff with medical record applications (Cerner, Allscripts, ePowerDoc, etc.)
 * Assist patients with their online medical records on the FollowMyHealth patient portal
