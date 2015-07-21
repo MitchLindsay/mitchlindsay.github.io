@@ -1,21 +1,37 @@
 <header class="site-header">
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.url }}/"><strong>{{ site.name }}</strong></a>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
 
-    <nav class="site-nav">
-      {% assign sorted_pages = site.pages | sort: "order" %}
-      {% for node in sorted_pages %}
-        {% if node.title %}
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ site.url }}">Mitch Lindsay</a>
+        </div>
 
-          {% if node.url == page.url %}
-            <a class="page-link" href="{{ node.url | prepend: site.url }}"><span class="icon {{ node.icon }}"> {{ node.title }}</span></a>
-          {% else %}
-            <a class="page-link" href="{{ node.url | prepend: site.url }}"><span class="icon {{ node.icon }}"> {{ node.title }}</span></a>
-          {% endif %}
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
 
-        {% endif %}
-      {% endfor %}
+            {% assign sorted_pages = site.pages | sort: "order" %}
+            {% for node in sorted_pages %}
+              {% if node.title %}
+                {% if node.url == page.url %}
+                  <li class="active"><a class="icon {{ node.icon }}" href="{{ node.url | prepend: site.url }}"> {{ node.title }}</a>
+                {% else %}
+                  <li><a class="icon {{ node.icon }}" href="{{ node.url | prepend: site.url }}"> {{ node.title }}</a>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+          </ul>
+        </div>
+        
+      </div>
     </nav>
 
   </div>

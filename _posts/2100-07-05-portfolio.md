@@ -5,8 +5,6 @@ categories: portfolio
 
 #Portfolio#
 
-Coming Soon!™
-
 <!--
 **Portfolio Website**
 | 2015
@@ -17,6 +15,4 @@ Coming Soon!™
 **2D Tile Map Editor**
 | 2011-2012
 
-**Academic CLP Attendance Database**
-| 2011
 -->
