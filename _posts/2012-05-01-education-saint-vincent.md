@@ -6,7 +6,7 @@ categories: education
 <img src="{{ site.url }}/assets/images/saint_vincent_background.jpg" alt="Saint Vincent College" class="img-rounded">
 
 [**Saint Vincent College**](http://www.stvincent.edu/)<br />
-**B.S. Computing & Information Sciences** <br />
+**B.S. Computing & Information Science** <br />
 **Concentration**: Computer Science<br />
 Latrobe, PA | Graduated 2012
 
