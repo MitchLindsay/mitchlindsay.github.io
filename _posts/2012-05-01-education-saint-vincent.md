@@ -27,5 +27,5 @@ Latrobe, PA | Graduated 2012
 * Logic
 * Calculus I & II
 * Discrete Structures I & II
-* General Physics I & II (with labs)
+* General Physics I & II
 * Computer Security
