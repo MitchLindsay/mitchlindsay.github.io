@@ -3,8 +3,6 @@ name: Introduction
 categories: home
 ---
 
-<img src="{{ site.url }}/{{ site.picture }}" alt="I'm a cat in disguise" class="img-rounded">
-
 I'm a hobbyist developer and IT professional looking to start a career in
 software development.
 
