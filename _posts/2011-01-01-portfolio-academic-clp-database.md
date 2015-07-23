@@ -84,7 +84,7 @@ School Project | 2011<br />
 database to track attendance for the Academic Collaborative Learning Program. My
 responsibilities on the project were the SQL queries and the user interface design.
 
-* The database allows users to import data from Excel into the database. They can
-then generate reports to compare class performance of students who attended the program with
- those who did not attend. These reports can be parsed through a wide variety of filters to display students of a
+* The database accepts data from several Excel spreadsheets. Users can generate reports to
+compare class performance of students who attended the program with those who did not attend.
+These reports can be filtered through a variety of criteria to show students of a
 particular major, grade, etc.
