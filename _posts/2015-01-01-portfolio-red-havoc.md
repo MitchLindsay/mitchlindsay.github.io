@@ -77,27 +77,21 @@ categories: portfolio
 </div>
 
 **Red Havoc (Tentative Title)** <br />
-Work in Progress | 2014-2015<br />
+Work in Progress | 2015<br />
 <span class="label label-danger">C#</span>
 <span class="label label-danger">Unity</span><br />
 
 * Red Havoc is a 2D turn-based strategy game. It is being developed in Unity with C#
 for the PC. The objective of the game is to gather resources, build units, and defeat
-all of the enemy forces. The game currently features multiple unit and terrain types, each
-with their own unique stats. Players can currently move units and assign them commands.
+all of the enemy forces. Players can currently move units and assign them commands.
 Combat, unit building, and resource gathering are in the works.
 
 * Unit movement uses a pathfinding algorithm based on a combination of
-[Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search) to determine tiles
-that a unit can move to, and the [A* Search Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
+[Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search) to determine which tiles
+a unit can move to, and the [A* Search Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
 to determine the shortest path from the unit to its destination.
 
-* Maps are randomly generated. Currently the map tiles are selected at random using
-a random number generator. Once more terrain types are added to the game, a more
-sophisticated map generation algorithm will be used to allow for more interesting
-map layouts.
-
-* Game and UI states are handled with a state machine. When a state changes, all events
-(selecting a unit, changing turns, panning the camera, etc.) are filtered through
+* Game/UI states are handled with a state machine. When a state changes, all events
+(moving a unit, changing turns, panning the camera, etc.) are filtered through
 an event queue, to ensure that all events happen in the order that they occurred and that they do not
 overlap.
