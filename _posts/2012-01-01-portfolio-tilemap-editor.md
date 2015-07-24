@@ -9,7 +9,7 @@ School Project | 2011-2012<br />
 <span class="label label-danger">Microsoft XNA</span>
 <span class="label label-danger">WinForms</span><br />
 
-* For my Senior Captone Project, I developed a 2D Tile Map Editor with C# and the
+* For my Senior Capstone Project, I developed a 2D Tile Map Editor with C# and the
 [Microsoft XNA Framework](https://en.wikipedia.org/wiki/Microsoft_XNA). The interface
 was created as a WinForms application and the graphics rendering was handled by XNA.
 
