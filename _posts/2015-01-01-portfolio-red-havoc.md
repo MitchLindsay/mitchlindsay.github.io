@@ -77,7 +77,7 @@ categories: portfolio
 </div>
 
 **Red Havoc (Tentative Title)** <br />
-Work in Progress | 2015<br />
+[Source Code](https://github.com/MitchLindsay/red-havoc) | 2015<br />
 <span class="label label-danger">C#</span>
 <span class="label label-danger">Unity</span><br />
 
