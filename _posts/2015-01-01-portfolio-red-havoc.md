@@ -87,7 +87,7 @@ all of the enemy forces. Players can currently move units and assign them comman
 Combat, unit building, and resource gathering are in the works.
 
 * Unit movement uses a pathfinding algorithm based on a combination of
-[Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search) to determine which tiles
+[Breadth-First Search](https://en.wikipedia.org/wiki/Breadth-first_search) to determine which tiles
 a unit can move to, and the [A* Search Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
 to determine the shortest path from the unit to its destination.
 
