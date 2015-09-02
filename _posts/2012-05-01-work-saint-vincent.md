@@ -3,7 +3,7 @@ name: Saint Vincent College
 categories: work
 ---
 
-<img src="{{ site.url }}/assets/images/saint_vincent_logo.png" alt="Saint Vincent College" class="img-rounded">
+<img src="{{ site.url }}/assets/images/saint_vincent_logo.png" alt="Saint Vincent College" class="img-rounded" style="width:20%;height:20%">
 
 [**Saint Vincent College**](http://www.stvincent.edu/)<br />
 **Help Desk Technician** <br />
