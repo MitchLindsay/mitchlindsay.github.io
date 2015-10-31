@@ -7,7 +7,12 @@ categories: work
 
 [**Saint Vincent College**](http://www.stvincent.edu/)<br />
 **Help Desk Technician** <br />
-Latrobe, PA | 2009-2012
+Latrobe, PA | 2009-2012 <br />
+<span class="label label-danger">Hardware</span>
+<span class="label label-danger">A/V Equipment</span>
+<span class="label label-danger">SupportSuite</span>
+<span class="label label-danger">KACE</span>
+<span class="label label-danger">ITIL</span>
 
 * Resolved computer, printer, and network related issues for faculty members
 * Serviced student personal laptops

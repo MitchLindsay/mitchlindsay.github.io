@@ -7,7 +7,12 @@ categories: work
 
 [**Excela Health**](http://www.excelahealth.org/)<br />
 **Support Center Analyst** <br />
-Greensburg, PA | 2013-2015
+Greensburg, PA | 2013-2015<br />
+<span class="label label-danger">Medical Records</span>
+<span class="label label-danger">Financial Applications</span>
+<span class="label label-danger">Active Directory</span>
+<span class="label label-danger">Hardware</span>
+<span class="label label-danger">HelpSTAR</span>
 
 * Assisted medical staff with medical record applications (Cerner, Allscripts, ePowerDoc, etc.)
 * Assisted patients with their online medical records on the FollowMyHealth patient portal
