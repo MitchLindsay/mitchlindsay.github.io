@@ -8,3 +8,7 @@ categories: work
 [**Rivers Agile Solutions**](http://riversagile.com/)<br />
 **Software Engineer** <br />
 Canonsburg, PA | 2015-Present
+
+* Develops both software and scripts for reporting and analytics
+* Builds installers and bootstrappers with the WiX toolset
+* Automates build processes for Windows applications
