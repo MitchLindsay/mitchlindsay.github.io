@@ -9,6 +9,6 @@ categories: work
 **Software Engineer** <br />
 Canonsburg, PA | 2015-Present<br />
 
-* Develops Windows applications (C/C++) using agile development practices
-* Builds Windows installers and bootstrappers with the WiX toolset
-* Automates build processes using various scripting tools (Powershell, Batch, Shell, etc.)
+* Develops Windows applications using agile development practices
+* Builds Windows installers and bootstrappers
+* Automates build processes using various scripting tools
