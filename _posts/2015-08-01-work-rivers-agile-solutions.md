@@ -9,6 +9,8 @@ categories: work
 **Software Engineer** <br />
 Canonsburg, PA | 2015-Present<br />
 
-* Develops Windows applications using agile development practices
-* Builds Windows installers and bootstrappers
-* Automates build processes using various scripting tools
+* Develops Electron applications with Node.js and React
+* Utilizes agile development practices (Git, JIRA)
+* Writes scripts to collect hardware information (Powershell, WMI)
+* Builds Windows installers and bootstrappers with WiX
+* Automates Windows build processes with various scripting tools (Powershell, MinGW/Shell)
