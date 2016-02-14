@@ -1,11 +1,38 @@
 <footer class="site-footer">
+
   <div class="wrapper">
 
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
     <div class="footer-col-wrapper">
-      Copyright &copy; 2016 {{ site.name }}.<br />
-      Powered by <span class="icon ion-erlenmeyer-flask"></span> <a href="https://github.com/jekyll/jekyll">Jekyll</a>.
-      Hosted by <span class="icon ion-social-github"></span> <a href="https://github.com/MitchLindsay/mitchlindsay.github.io">GitHub</a>.
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
     </div>
 
   </div>
+
 </footer>

@@ -6,22 +6,21 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
+$base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     24px;
+$spacing-unit:     30px;
 
-$text-color:       #2A2C2B;
-$background-color: #FFFFFF;
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
 
-$link-color:       #F6484F;
-$link-color-hover: #FFFFFF;
-
-$grey-color:       #9D9D9D;
-$grey-color-light: #374140;
-$grey-color-dark:  #2A2C2B;
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
@@ -31,7 +30,7 @@ $on-laptop:        800px;
 
 
 
-// Using media queries with like this:
+// Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
@@ -48,7 +47,6 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "update",
         "base",
         "layout",
         "syntax-highlighting"

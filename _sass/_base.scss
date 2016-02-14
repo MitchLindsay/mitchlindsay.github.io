@@ -13,24 +13,19 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-
-/* Fixed footer */
-html {
-    position: relative;
-    min-height: 100%;
-}
-
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
-    margin-bottom: 100px;
-    width: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
 }
+
+
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -87,7 +82,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: $base-font-weight;
 }
 
 
@@ -96,15 +91,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $link-color;
+    color: $brand-color;
     text-decoration: none;
 
     &:visited {
-        color: $link-color;;
+        color: darken($brand-color, 15%);
     }
 
     &:hover {
-        color: $link-color;
+        color: $text-color;
         text-decoration: underline;
     }
 }
@@ -146,7 +141,7 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
+    overflow-x: auto;
 
     > code {
         border: 0;

@@ -1,29 +1,23 @@
 ---
 layout: default
-title: Home
-permalink: /
-icon: ion-home
-order: 1
 ---
-<div class="page">
 
-  <header class="page-header">
-    <h1 class="page-heading">Hi, I'm Mitch</h1>
-  </header>
+<div class="home">
 
-  <article>
-    {% for post in site.categories.home %}
+  <h1 class="page-heading">Posts</h1>
 
-      <div class="home-item">
-        {{ post.content }}
-      </div>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-      {% unless forloop.last %}
-        <br />
-        <hr class="small" />
-        <br />
-      {% endunless %}
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
     {% endfor %}
-  </article>
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
