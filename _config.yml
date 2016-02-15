@@ -1,19 +1,56 @@
+# Site Info
+title:        Mitch Lindsay
+author:       Mitch Lindsay
+description:  The personal website of Mitch Lindsay
 
-# Site settings
-title: Mitch Lindsay
-email: work@mitchlindsay.me
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mitchlindsay.me" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# Contact Info
+email:    work@mitchlindsay.me
+linkedin: https://www.linkedin.com/in/mitchrlindsay
+github:   https://www.github.com/mitchlindsay
 
-# Build settings
-markdown: kramdown
+# Global Settings
+markdown:   kramdown
+permalink:  pretty
+encoding:   UTF-8
 
-# Ruby Gems
+# Server Settings
+source:       ./source
+destination:  ./static
+
+# Plugins
 gems:
   - jekyll-assets
+
+# Assets Pipeline
+assets:
+  prefix:
+    "/assets"
+  sources:
+    - _assets/fonts
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
+  compress:
+    css:  sass
+    js:   uglifier
+  features:
+    automatic_img_size: false
+    automatic_img_alt: false
+
+# Excluded from build
+exclude: [
+  '.gitignore',
+  'README.md',
+  'Gemfile',
+  'Gemfile.lock',
+  'package.json',
+  'gulpfile.js',
+  'node_modules'
+]
+
+# Collections
+collections:
+  - jobs
+  - projects
+  - technologies
+  - software

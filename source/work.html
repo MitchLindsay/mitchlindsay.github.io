@@ -1,0 +1,102 @@
+---
+layout: default
+title: Work
+icon: fa-briefcase
+priority: 2
+---
+
+<div class="page">
+
+  <header class="page-header">
+    <h1 class="page-heading">{{ page.title }}</h1>
+  </header>
+
+  <!-- Jobs Sorted by End Date -->
+  {% assign sorted-jobs = site.jobs | sort: "end-date" %}
+  {% for job in sorted-jobs reversed %}
+
+    <div class="container-fluid">
+
+      <!-- Company Logo -->
+      <div class="row">
+        <div class="col-xs-6">{% image '{{ job.logo }}' alt:'{{ job.company }}' %}</div>
+      </div>
+      <br />
+
+      <!-- Company Name, Position, Location and Start/End Dates -->
+      <div class="row">
+        <div class="col-xs-8">
+          <a href="{{ job.website }}"><b>{{ job.company }}</b></a><br />
+          <b>{{ job.position }}</b><br />
+          {{ job.location }} | {{ job.start-date }} - {{ job.end-date }}<br />
+        </div>
+      </div>
+      <hr class="subdivider" />
+
+      <!-- Job Responsibilities -->
+      <div class="row row-header">
+        <div class="col-xs-12">
+          <b>Responsibilities</b>:
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          {% for responsibility in job.responsibilities %}
+            <li>{{ responsibility }}</li>
+          {% endfor %}
+        </div>
+      </div>
+      <hr class="subdivider" />
+
+      <!-- Technologies and Software Headers -->
+      {% if job.technologies or job.software %}
+        <div class="row row-header">
+          {% if job.technologies %}
+          <div class="col-xs-6">
+            <b>Technologies</b>:
+          </div>
+          {% endif %}
+          {% if job.software %}
+          <div class="col-xs-6">
+            <b>Software</b>:
+          </div>
+          {% endif %}
+        </div>
+
+        <div class="row">
+          {% if job.technologies %}
+            <!-- Technologies Used -->
+            <div class="col-xs-6">
+              {% for technology-used in job.technologies %}
+                {% for technology in site.technologies %}
+                  {% if technology-used == technology.name %}
+                    <li><a href="{{ technology.link }}">{{ technology.name }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if job.software %}
+          <!-- Software Used -->
+          <div class="col-xs-6">
+            {% for software-used in job.software %}
+              {% for software in site.software %}
+                {% if software-used == software.name %}
+                  <li><a href="{{ software.link }}">{{ software.name }}</a></li>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% unless forloop.last %}
+          <hr class="divider" />
+        {% endunless %}
+      {% endif %}
+
+    </div>
+    <br />
+  {% endfor %}
+
+</div>
