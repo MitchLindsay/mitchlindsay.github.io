@@ -35,15 +35,37 @@ priority: 2
 
       <!-- Job Responsibilities -->
       {% if job.responsibilities %}
+        <div class="row row-header">
+          <div class="col-xs-12">
+            <b>Responsibilities</b>:
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            {% for responsibility in job.responsibilities %}
+              <li>{{ responsibility }}</li>
+            {% endfor %}
+          </div>
+        </div>
+        <hr class="subdivider" />
+      {% endif %}
+
+      <!-- Related Projects -->
+      {% assign projects = site.projects %}
+      {% if job.related-projects %}
       <div class="row row-header">
         <div class="col-xs-12">
-          <b>Responsibilities</b>:
+          <b>Related Projects</b>:
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
-          {% for responsibility in job.responsibilities %}
-            <li>{{ responsibility }}</li>
+          {% for project in projects %}
+            {% for related-project in job.related-projects %}
+              {% if related-project == project.name %}
+                <li>{{ related-project }}</li> <!-- TODO: Link to project page -->
+              {% endif %}
+            {% endfor %}
           {% endfor %}
         </div>
       </div>

@@ -11,4 +11,107 @@ priority: 3
     <h1 class="page-heading">{{ page.title }}</h1>
   </header>
 
+  <!-- Projects Sorted by End Date -->
+  {% assign sorted-projects = site.projects | sort: "end-date" %}
+  {% for project in sorted-projects reversed %}
+
+    <div class="container-fluid">
+
+      <!-- Project Name and Start/End Dates -->
+      <div class="row">
+        <div class="col-xs-8">
+          <b>{{ project.name }}</b><br />
+          {% if project.download %}
+            <a href="{{ project.download }}">Download</a> |
+          {% endif %}
+          {% if project.source %}
+            <a href="{{ project.source }}">Source Code</a> |
+          {% endif %}
+          {% if project.end-date == project.start-date %}
+            {{ project.end-date }}<br />
+          {% else %}
+            {{ project.start-date }} - {{ project.end-date }}<br />
+          {% endif %}
+        </div>
+      </div>
+      <hr class="subdivider" />
+
+      <!-- Project Description -->
+      {% if project.content %}
+        <div class="row row-header">
+          <div class="col-xs-12">
+            <b>Description</b>:
+          </div>
+        </div>
+        <div class="row">
+          {{ project.content }}
+        </div>
+        <hr class="subdivider" />
+      {% endif %}
+
+      <!-- Related Jobs -->
+      {% assign jobs = site.jobs %}
+      {% if project.related-jobs %}
+      <div class="row row-header">
+        <div class="col-xs-12">
+          <b>Developed for</b>:
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          {% for job in jobs %}
+            {% for related-job in project.related-jobs %}
+              {% if related-job == job.company %}
+                <li>{{ related-job }}</li> <!-- TODO: Link to job page -->
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+      <hr class="subdivider" />
+      {% endif %}
+
+      <!-- Technologies and Software Headers -->
+      {% if project.technologies or project.software %}
+        <div class="row row-header">
+          {% if project.technologies %}
+          <div class="col-xs-6">
+            <b>Technologies</b>:
+          </div>
+          {% endif %}
+          {% if project.software %}
+          <div class="col-xs-6">
+            <b>Software</b>:
+          </div>
+          {% endif %}
+        </div>
+
+        <div class="row">
+          <!-- Technologies Used -->
+          {% if project.technologies %}
+            <div class="col-xs-6">
+              {% for technology in project.technologies %}
+                  <li>{{ technology }}</li>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          <!-- Software Used -->
+          {% if project.software %}
+          <div class="col-xs-6">
+            {% for software in project.software %}
+              <li>{{ software }}</li>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% unless forloop.last %}
+          <hr class="divider" />
+        {% endunless %}
+      {% endif %}
+
+    </div>
+    <br />
+  {% endfor %}
+
 </div>
