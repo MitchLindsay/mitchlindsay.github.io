@@ -13,8 +13,10 @@ priority: 1
       <p>
         {% for job in site.jobs %}
           {% if job.end-date == "Present" %}
-            {% assign has-job = true %}
-            I'm a software engineer working at <a href="{{ job.website }}">{{ job.company }}</a>.
+            {% if job.contract == false %}
+              {% assign has-job = true %}
+              I'm a software engineer working at <a href="{{ job.website }}">{{ job.company }}</a>.
+            {% endif %}
           {% endif %}
         {% endfor %}
         {% if has-job != true %}

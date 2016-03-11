@@ -19,20 +19,20 @@ html {
 }
 
 hr.subdivider {
-  margin: $spacing-unit/2 0;
+  margin-top: $spacing-unit / 2;
 }
 
 hr.divider {
   border-color: $grey-light-color;
-  margin: $spacing-unit 0;
+  margin-top: $spacing-unit;
 }
 
 .row-header {
-  padding: $spacing-unit/2 0;
+  padding: $spacing-unit / 2 0;
 }
 
 .col-xs-6 > li, .col-xs-12 > li {
-  margin-left: $spacing-unit/2;
+  margin-left: $spacing-unit / 2;
 }
 
 .page-header {

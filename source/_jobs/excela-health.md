@@ -6,6 +6,7 @@ start-date: "2013"
 end-date: "2015"
 website: "http://www.excelahealth.org/"
 logo: "excela-health-logo.jpg"
+contract: false
 responsibilities:
  - "Assisted medical staff with medical record applications"
  - "Assisted patients with their online medical records"
@@ -20,12 +21,7 @@ software:
  - "Allscripts"
  - "Cerner"
  - "Citrix"
- - "ePowerDoc"
- - "FollowMyHealth"
  - "HelpSTAR"
- - "Horizon HomeCare"
- - "Imprivata SSO"
  - "McKesson STAR"
  - "Sunquest"
- - "TherapySource"
 ---

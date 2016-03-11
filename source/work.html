@@ -19,7 +19,7 @@ priority: 2
 
       <!-- Company Logo -->
       <div class="row">
-        <div class="col-xs-6">{% image '{{ job.logo }}' alt:'{{ job.company }}' %}</div>
+        <div class="col-xs-4">{% image '{{ job.logo }}' alt:'{{ job.company }}' class:'img-responsive' %}</div>
       </div>
       <br />
 
@@ -34,6 +34,7 @@ priority: 2
       <hr class="subdivider" />
 
       <!-- Job Responsibilities -->
+      {% if job.responsibilities %}
       <div class="row row-header">
         <div class="col-xs-12">
           <b>Responsibilities</b>:
@@ -47,6 +48,7 @@ priority: 2
         </div>
       </div>
       <hr class="subdivider" />
+      {% endif %}
 
       <!-- Technologies and Software Headers -->
       {% if job.technologies or job.software %}
@@ -64,28 +66,20 @@ priority: 2
         </div>
 
         <div class="row">
+          <!-- Technologies Used -->
           {% if job.technologies %}
-            <!-- Technologies Used -->
             <div class="col-xs-6">
-              {% for technology-used in job.technologies %}
-                {% for technology in site.technologies %}
-                  {% if technology-used == technology.name %}
-                    <li><a href="{{ technology.link }}">{{ technology.name }}</a></li>
-                  {% endif %}
-                {% endfor %}
+              {% for technology in job.technologies %}
+                  <li>{{ technology }}</li>
               {% endfor %}
             </div>
           {% endif %}
 
-          {% if job.software %}
           <!-- Software Used -->
+          {% if job.software %}
           <div class="col-xs-6">
-            {% for software-used in job.software %}
-              {% for software in site.software %}
-                {% if software-used == software.name %}
-                  <li><a href="{{ software.link }}">{{ software.name }}</a></li>
-                {% endif %}
-              {% endfor %}
+            {% for software in job.software %}
+              <li>{{ software }}</li>
             {% endfor %}
           </div>
           {% endif %}
