@@ -23,6 +23,8 @@ GEM
     fastimage (1.8.1)
       addressable (~> 2.3, >= 2.3.5)
     ffi (1.9.10)
+    font-awesome-sass (4.5.0)
+      sass (>= 3.2)
     gemoji (2.1.0)
     github-pages (48)
       RedCloth (= 4.2.9)
@@ -101,7 +103,6 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
     mercenary (0.3.5)
-    mini_magick (4.4.0)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multipart-post (2.0.0)
@@ -143,9 +144,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  font-awesome-sass
   github-pages
   jekyll-assets
-  mini_magick
   sass
   uglifier
 
