@@ -15,7 +15,40 @@ priority: 3
   {% assign sorted-projects = site.projects | sort: "end-date" %}
   {% for project in sorted-projects reversed %}
 
-    <div class="container-fluid">
+    {% for screenshot in project.screenshots %}
+      <!-- Screenshot Modal -->
+      <div class="modal fade" id="{{ screenshot.image }}-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">{{ screenshot.text }}</h4>
+            </div>
+            <div class="modal-body">
+              {% image projects/'{{ screenshot.image }}' alt:'{{ screenshot.text }}' %}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+    <div id="{{ project.name }}" class="container-fluid">
+
+      {% if project.screenshots %}
+        <div class="row">
+          {% for screenshot in project.screenshots %}
+            <!-- Screenshot Thumbnail -->
+            <div class="col-xs-6 col-md-3">
+              <a href="#" class="thumbnail" data-toggle="modal" data-target="#{{ screenshot.image }}-modal">
+                {% image projects/'{{ screenshot.image }}' alt:'{{ screenshot.text }}' %}
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
 
       <!-- Project Name and Start/End Dates -->
       <div class="row">
@@ -27,6 +60,9 @@ priority: 3
           {% if project.source %}
             <a href="{{ project.source }}">Source Code</a> |
           {% endif %}
+          {% if project.school == true %}
+            School Project |
+          {% endif %}
           {% if project.end-date == project.start-date %}
             {{ project.end-date }}<br />
           {% else %}
@@ -34,6 +70,7 @@ priority: 3
           {% endif %}
         </div>
       </div>
+      
       <hr class="subdivider" />
 
       <!-- Project Description -->
@@ -46,33 +83,32 @@ priority: 3
         <div class="row">
           {{ project.content }}
         </div>
-        <hr class="subdivider" />
       {% endif %}
 
       <!-- Related Jobs -->
       {% assign jobs = site.jobs %}
       {% if project.related-jobs %}
-      <div class="row row-header">
-        <div class="col-xs-12">
-          <b>Developed for</b>:
+        <div class="row row-header">
+          <div class="col-xs-12">
+            <b>Developed for</b>:
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          {% for job in jobs %}
-            {% for related-job in project.related-jobs %}
-              {% if related-job == job.company %}
-                <li>{{ related-job }}</li> <!-- TODO: Link to job page -->
-              {% endif %}
+        <div class="row">
+          <div class="col-xs-12">
+            {% for job in jobs %}
+              {% for related-job in project.related-jobs %}
+                {% if related-job == job.company %}
+                  <li><a href="{{ site.url }}/work/#{{ related-job }}">{{ related-job }}</a></li>
+                {% endif %}
+              {% endfor %}
             {% endfor %}
-          {% endfor %}
+          </div>
         </div>
-      </div>
-      <hr class="subdivider" />
       {% endif %}
 
       <!-- Technologies and Software Headers -->
       {% if project.technologies or project.software %}
+        <hr class="subdivider" />
         <div class="row row-header">
           {% if project.technologies %}
           <div class="col-xs-6">

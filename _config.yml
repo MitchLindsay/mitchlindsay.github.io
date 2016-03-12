@@ -1,7 +1,9 @@
 # Site Info
-title:        Mitch Lindsay
-author:       Mitch Lindsay
-description:  The personal website of Mitch Lindsay
+title:          Mitch Lindsay
+author:         Mitch Lindsay
+description:    The personal portfolio website of Mitch Lindsay
+portrait:       portfolio-photo
+portrait-text:  I'm actually a cat in disguise!
 
 # Contact Info
 email:    work@mitchlindsay.me
@@ -26,10 +28,10 @@ assets:
   prefix:
     "/assets"
   sources:
-    - _assets/fonts
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/images
+    - _assets/fonts/*
+    - _assets/images/*
+    - _assets/javascripts/*
+    - _assets/stylesheets/*
   compress:
     css:  sass
     js:   uglifier
@@ -52,3 +54,4 @@ exclude: [
 collections:
   - jobs
   - projects
+  - schools
