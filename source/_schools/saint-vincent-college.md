@@ -7,7 +7,7 @@ degree: "B.S."
 major: "Computing & Information Science"
 concentration: "Computer Science"
 location: "Latrobe, PA"
-photo: "svc-photo.jpg"
+photo: "svc-photo"
 website: "http://www.stvincent.edu/"
 coursework:
   - Computing & Information Sciences I & II

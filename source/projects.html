@@ -70,7 +70,7 @@ priority: 3
           {% endif %}
         </div>
       </div>
-      
+
       <hr class="subdivider" />
 
       <!-- Project Description -->
@@ -126,8 +126,9 @@ priority: 3
           <!-- Technologies Used -->
           {% if project.technologies %}
             <div class="col-xs-6">
-              {% for technology in project.technologies %}
-                  <li>{{ technology }}</li>
+              {% assign sorted-technologies = project.technologies | sort %}
+              {% for technology in sorted-technologies %}
+                <li>{{ technology }}</li>
               {% endfor %}
             </div>
           {% endif %}
@@ -135,7 +136,8 @@ priority: 3
           <!-- Software Used -->
           {% if project.software %}
           <div class="col-xs-6">
-            {% for software in project.software %}
+            {% assign sorted-software = project.software | sort %}
+            {% for software in sorted-software %}
               <li>{{ software }}</li>
             {% endfor %}
           </div>

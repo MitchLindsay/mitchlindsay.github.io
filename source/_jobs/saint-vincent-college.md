@@ -5,7 +5,7 @@ location: "Latrobe, PA"
 start-date: "2009"
 end-date: "2012"
 website: "http://www.stvincent.edu"
-logo: "saint-vincent-logo-1.png"
+logo: "saint-vincent-logo-1"
 contract: false
 responsibilities:
  - "Resolved computer, printer, and network related issues for faculty members"

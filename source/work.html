@@ -93,8 +93,9 @@ priority: 2
           <!-- Technologies Used -->
           {% if job.technologies %}
             <div class="col-xs-6">
-              {% for technology in job.technologies %}
-                  <li>{{ technology }}</li>
+              {% assign sorted-technologies = job.technologies | sort %}
+              {% for technology in sorted-technologies %}
+                <li>{{ technology }}</li>
               {% endfor %}
             </div>
           {% endif %}
@@ -102,7 +103,8 @@ priority: 2
           <!-- Software Used -->
           {% if job.software %}
           <div class="col-xs-6">
-            {% for software in job.software %}
+            {% assign sorted-software = job.software | sort %}
+            {% for software in sorted-software %}
               <li>{{ software }}</li>
             {% endfor %}
           </div>

@@ -6,11 +6,11 @@ download: "https://360fly.com/Director"
 related-jobs:
   - "360fly"
 screenshots:
-  - image: "360fly-director-1.jpg"
+  - image: "360fly-director-1"
     text: "Video Library"
-  - image: "360fly-director-2.jpg"
+  - image: "360fly-director-2"
     text: "Merging Multiple Videos"
-  - image: "360fly-director-3.png"
+  - image: "360fly-director-3"
     text: "Uploading to Social Media"
 technologies:
   - "Browserify"

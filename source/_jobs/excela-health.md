@@ -5,7 +5,7 @@ location: "Greensburg, PA"
 start-date: "2013"
 end-date: "2015"
 website: "http://www.excelahealth.org/"
-logo: "excela-health-logo.jpg"
+logo: "excela-health-logo"
 contract: false
 responsibilities:
  - "Assisted medical staff with medical record applications"

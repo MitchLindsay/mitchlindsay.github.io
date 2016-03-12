@@ -4,11 +4,11 @@ start-date: "2011"
 end-date: "2011"
 school: true
 screenshots:
-  - image: "academic-clp-database-1.png"
+  - image: "academic-clp-database-1"
     text: "Main Menu"
-  - image: "academic-clp-database-2.png"
+  - image: "academic-clp-database-2"
     text: "Importing Data"
-  - image: "academic-clp-database-3.png"
+  - image: "academic-clp-database-3"
     text: "Comparing Grades"
 technologies:
   - "SQL"
