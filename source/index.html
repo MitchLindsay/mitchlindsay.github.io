@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+icon: fa-home
+priority: 1
+---
+
+<div class="home">
+
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h2>Hi, I'm Mitch!</h2>
+      {% image photos/'{{ site.portrait }}' alt:'{{ site.portrait-text }}' class:'profile img-rounded' %}
+      <p>
+        {% for job in site.jobs %}
+          {% if job.end-date == "Present" %}
+            {% if job.contract == false %}
+              {% assign has-job = true %}
+              I'm a software engineer working at <a href="{{ job.website }}">{{ job.company }}</a>.
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% if has-job != true %}
+          I'm a software engineer.
+        {% endif %}
+      </p>
+      <p>You can find out more about my <a href="{{ site.url }}/work">work</a>,
+         <a href="{{ site.url }}/projects">projects</a>, and <a href="{{ site.url }}/education">education</a>
+         by visiting each of the corresponding pages.
+      </p>
+      <p>If you’d like to get in touch, you can email me at <a href="mailto:{{ site.email }}">work@mitchlindsay.me</a>,
+         connect with me on <a href="{{ site.linkedin }}">LinkedIn</a>, or check out my projects on
+         <a href="{{ site.github }}">GitHub</a>.
+      </p>
+    </div>
+  </div>
+
+</div>

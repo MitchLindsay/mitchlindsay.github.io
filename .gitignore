@@ -1,2 +1,5 @@
-_site
+.asset-cache
+.jekyll-metadata
 .sass-cache
+node_modules
+static

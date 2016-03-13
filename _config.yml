@@ -1,10 +1,57 @@
-# Site settings
-title: "Mitch Lindsay"
-name: "Mitch Lindsay"
-email: "work@mitchlindsay.me"
-picture: "assets/images/portfolio_picture.jpg"
-linkedin: "https://www.linkedin.com/in/mitchrlindsay"
-github: "https://www.github.com/mitchlindsay"
+# Site Info
+title:          Mitch Lindsay
+author:         Mitch Lindsay
+description:    The personal portfolio website of Mitch Lindsay
+portrait:       portfolio-photo
+portrait-text:  I'm actually a cat in disguise!
 
-# Build settings
-markdown: kramdown
+# Contact Info
+email:    work@mitchlindsay.me
+linkedin: https://www.linkedin.com/in/mitchrlindsay
+github:   https://www.github.com/mitchlindsay
+
+# Global Settings
+markdown:   kramdown
+permalink:  pretty
+encoding:   UTF-8
+
+# Server Settings
+source:       ./source
+destination:  ./static
+
+# Plugins
+gems:
+  - jekyll-assets
+
+# Assets Pipeline
+assets:
+  prefix:
+    "/assets"
+  sources:
+    - _assets/fonts
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+  compress:
+    css:  sass
+    js:   uglifier
+  features:
+    automatic_img_size: false
+    automatic_img_alt: false
+
+# Excluded from build
+exclude: [
+  '.gitignore',
+  'README.md',
+  'Gemfile',
+  'Gemfile.lock',
+  'package.json',
+  'gulpfile.js',
+  'node_modules'
+]
+
+# Collections
+collections:
+  - jobs
+  - projects
+  - schools

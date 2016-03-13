@@ -1,0 +1,82 @@
+// Site Header
+.site-header {
+  min-height: 56px;
+  position: relative; // for mobile navigation icon
+}
+
+.navbar {
+  background: $black-color;
+}
+
+.navbar .navbar-brand {
+  color: $red-color;
+}
+
+// Site Content
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+hr.subdivider {
+  margin-top: $spacing-unit / 2;
+}
+
+hr.divider {
+  border-color: $grey-light-color;
+  margin-top: $spacing-unit;
+}
+
+.row-header {
+  padding: $spacing-unit / 2 0;
+}
+
+.col-xs-6 > li, .col-xs-12 > li {
+  margin-left: $spacing-unit / 2;
+}
+
+.page-header {
+  border-color: $grey-light-color;
+  margin-top: 0;
+}
+
+.page-heading {
+  font-size: 24px;
+}
+
+.page-content {
+  padding: $spacing-unit*2 0;
+  margin-bottom: $footer-height;
+}
+
+// Site Footer
+.site-footer {
+  background-color: $black-color;
+  bottom: 0;
+  color: $grey-light-color;
+  font-size: 13px;
+  min-height: $footer-height;
+  padding: $spacing-unit 0;
+  position: absolute;
+  width: 100%;
+}
+
+.profile {
+  margin-bottom: $spacing-unit;
+}
+
+.copyright {
+  line-height: 2em;
+}
+
+.btn-primary, .btn:focus, .btn:active:focus, .btn.active:focus, .btn-primary:active, .btn-primary.active {
+    background: $black-color;
+    border-color: $black-color;
+    color: $grey-light-color;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: $red-color;
+    border-color: $red-color;
+    color: $white-color;
+}
