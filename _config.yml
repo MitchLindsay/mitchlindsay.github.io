@@ -5,6 +5,7 @@ description:    The personal portfolio website of Mitch Lindsay
 favicon:        favicon.ico
 portrait:       portfolio-photo
 portrait-text:  I'm actually a cat in disguise!
+construction:   true
 
 # Contact Info
 email:    work@mitchlindsay.me
@@ -29,8 +30,6 @@ assets:
   prefix:
     "/assets"
   sources:
-    - _assets/fonts
-    - _assets/icons
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
@@ -43,13 +42,14 @@ assets:
 
 # Excluded from build
 exclude: [
+  'node_modules',
   '.gitignore',
-  'README.md',
   'Gemfile',
   'Gemfile.lock',
-  'package.json',
   'gulpfile.js',
-  'node_modules'
+  'package.json',
+  'Rakefile',
+  'README.md'
 ]
 
 # Collections

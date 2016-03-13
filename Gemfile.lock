@@ -23,8 +23,6 @@ GEM
     fastimage (1.8.1)
       addressable (~> 2.3, >= 2.3.5)
     ffi (1.9.10)
-    font-awesome-sass (4.5.0)
-      sass (>= 3.2)
     gemoji (2.1.0)
     github-pages (48)
       RedCloth (= 4.2.9)
@@ -144,7 +142,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  font-awesome-sass
   github-pages
   jekyll-assets
   sass

@@ -12,6 +12,10 @@
   color: $red-color;
 }
 
+.icon {
+  src: url(image_path('icons/map.svg'));
+}
+
 // Site Content
 html {
   min-height: 100%;

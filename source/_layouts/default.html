@@ -9,6 +9,13 @@
 
     <div class="page-content">
       <div class="wrapper">
+
+        {% if site.construction == true %}
+          <div class="alert alert-warning" role="alert">
+            <b>Notice!</b> Website is currently under construction!
+          </div>
+        {% endif %}
+
         {{ content }}
       </div>
     </div>
