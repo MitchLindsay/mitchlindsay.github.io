@@ -2,6 +2,7 @@
 title:          Mitch Lindsay
 author:         Mitch Lindsay
 description:    The personal portfolio website of Mitch Lindsay
+favicon:        favicon.ico
 portrait:       portfolio-photo
 portrait-text:  I'm actually a cat in disguise!
 
@@ -29,6 +30,7 @@ assets:
     "/assets"
   sources:
     - _assets/fonts
+    - _assets/icons
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
