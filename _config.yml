@@ -22,8 +22,12 @@ source:       ./source
 destination:  ./static
 
 # Plugins
-gems:
-  - jekyll-assets
+gems: [
+  'jekyll-assets',
+  'sass',
+  'font-awesome-sass',
+  'uglifier'
+]
 
 # Assets Pipeline
 assets:
