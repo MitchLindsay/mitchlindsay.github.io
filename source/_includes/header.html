@@ -23,13 +23,13 @@
                 {% if node.url == page.url %}
                   <li class="active">
                     <a href="{{ node.url | prepend: site.url }}">
-                      <svg role="img" title="{{ node.title }}"><use xlink:href="map.svg#{{ node.icon }}"/></svg> {{ node.title }}
+                      {% asset icons/'{{ node.icon }}'.svg title='{{ node.title }}' %} {{ node.title }}
                     </a>
                   </li>
                 {% else %}
                   <li>
                     <a href="{{ node.url | prepend: site.url }}">
-                      <svg role="img" title="{{ node.title }}"><use xlink:href="map.svg#{{ node.icon }}"/></svg> {{ node.title }}
+                      {% asset icons/'{{ node.icon }}'.svg title='{{ node.title }}' %} {{ node.title }}
                     </a>
                   </li>
                 {% endif %}
