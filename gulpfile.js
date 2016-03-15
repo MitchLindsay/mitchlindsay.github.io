@@ -7,7 +7,7 @@ gulp.task('clean', shell.task(['bundle exec jekyll clean']));
 
 gulp.task('build', shell.task(['bundle exec jekyll build']));
 
-gulp.task('build-watch', shell.task(['bundle exec jekyll build --watch']));
+gulp.task('build-dev', shell.task(['bundle exec jekyll build --watch']));
 
 gulp.task('doctor', shell.task(['bundle exec jekyll doctor']));
 
@@ -20,4 +20,4 @@ gulp.task('publish', ['clean', 'build'], function() {
   exec('rake publish');
 });
 
-gulp.task('default', ['clean', 'build-watch', 'serve']);
+gulp.task('default', ['clean', 'build-dev', 'serve']);
