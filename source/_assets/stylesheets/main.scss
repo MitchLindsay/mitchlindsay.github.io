@@ -28,9 +28,10 @@ $on-laptop:        800px;
 }
 
 @import
+  "_font-awesome-compass",
+  "_font-awesome-sprockets",
   "bootstrap",
   "font-awesome",
-  "font-awesome-sprockets",
   "custom/base",
   "custom/styles"
 ;
