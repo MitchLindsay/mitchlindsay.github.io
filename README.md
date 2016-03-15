@@ -3,7 +3,7 @@ mitchlindsay.me
 
 ## About
 
-The personal portfolio of Mitch Lindsay.
+My personal portfolio website. Built using Jekyll.
 
 ## Running Locally
 
