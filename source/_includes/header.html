@@ -22,17 +22,13 @@
               {% if node.title %}
                 {% if node.url == page.url %}
                   <li class="active">
-                    <a href="{{ node.url | prepend: site.url }}">
-                      {% asset icons/'{{ node.icon }}'.svg title='{{ node.title }}' %} {{ node.title }}
-                    </a>
-                  </li>
                 {% else %}
                   <li>
+                {% endif %}
                     <a href="{{ node.url | prepend: site.url }}">
-                      {% asset icons/'{{ node.icon }}'.svg title='{{ node.title }}' %} {{ node.title }}
+                      <i class="fa {{ node.icon }} fa-fw"></i>&nbsp; {{ node.title }}
                     </a>
                   </li>
-                {% endif %}
               {% endif %}
             {% endfor %}
 
