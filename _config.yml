@@ -7,11 +7,6 @@ portrait:       portfolio-photo
 portrait-text:  "I'm actually a cat in disguise!"
 construction:   false
 
-# Contact Info
-email:    work@mitchlindsay.me
-linkedin: https://www.linkedin.com/in/mitchrlindsay
-github:   https://www.github.com/mitchlindsay
-
 # Global Settings
 markdown:   kramdown
 permalink:  pretty
@@ -62,3 +57,4 @@ collections:
   - jobs
   - projects
   - schools
+  - contacts
