@@ -3,7 +3,10 @@ var exec = require('child_process').exec;
 var gulp = require('gulp');
 var shell = require('gulp-shell');
 
-gulp.task('clean', shell.task(['bundle exec jekyll clean']));
+gulp.task('clean', function() {
+  shell.task(['rm -rf source/.asset-cache'])
+  shell.task(['bundle exec jekyll clean'])
+});
 
 gulp.task('build-prod', shell.task(['JEKYLL_ENV=production bundle exec jekyll build']));
 
