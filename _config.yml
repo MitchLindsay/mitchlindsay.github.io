@@ -29,6 +29,7 @@ assets:
   prefix:
     "/assets"
   sources:
+    - _assets/documents
     - _assets/fonts
     - _assets/images
     - _assets/javascripts

@@ -32,8 +32,7 @@ priority: 1
         {% for node in sorted-pages %}
           {% if node.title != "Home" %}
             {% if forloop.last %} and {% endif %}
-            <a style="text-transform: lowercase" 
-               href="{{ node.url | prepend: site.url }}">{{ node.title }}</a></span>{% if forloop.last != true %},{% endif %}
+            <a href="{{ node.url | prepend: site.url }}">{{ node.title | downcase }}</a></span>{% if forloop.last != true %},{% endif %}
           {% endif %}
         {% endfor %}
         by visiting each of the corresponding pages.</p>
@@ -43,12 +42,14 @@ priority: 1
       {% if sorted-contacts %}
         <p>If you’d like to get in touch, you can
         {% for contact in sorted-contacts %}
-          {% if forloop.last %} or {% endif %}
-          {{ contact.phrase }}
-          {% if contact.title == "Email" %}
-            <a href="mailto:{{ contact.url }}">{{ contact.url }}</a>{% if forloop.last %}.{% else %},{% endif %}
-          {% else %}
-            <a href="{{ contact.url }}">{{ contact.title }}</a>{% if forloop.last %}.{% else %},{% endif %}
+          {% if contact.phrase %}
+            {% if forloop.last %} or {% endif %}
+            {{ contact.phrase }}
+            {% if contact.title == "Email" %}
+              <a href="mailto:{{ contact.url }}">{{ contact.url }}</a>{% if forloop.last %}.{% else %},{% endif %}
+            {% else %}
+              <a href="{{ contact.url }}">{{ contact.title }}</a>{% if forloop.last %}.{% else %},{% endif %}
+            {% endif %}
           {% endif %}
         {% endfor %}
         </p>
