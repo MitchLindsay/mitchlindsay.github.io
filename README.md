@@ -1,4 +1,4 @@
-mitchlindsay.me
+[mitchlindsay.me](https://mitchlindsay.me)
 ==================
 
 ## About
