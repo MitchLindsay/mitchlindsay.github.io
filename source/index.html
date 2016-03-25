@@ -54,6 +54,15 @@ priority: 1
         {% endfor %}
         </p>
       {% endif %}
+      <!-- Download(s) -->
+      {% assign sorted-downloads = site.downloads | sort: "priority" %}
+      {% if sorted-downloads %}
+        {% for download in sorted-downloads %}
+          {% if download.available %}
+            <p>My <a href="{{ download.url }}">{{ download.title | downcase }}</a> is also available to download.</p>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
     </div>
   </div>
 
