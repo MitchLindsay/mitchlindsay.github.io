@@ -6,13 +6,12 @@ source: "https://github.com/MitchLindsay/mitchlindsay.github.io"
 technologies:
   - "Bootstrap"
   - "Browsersync"
+  - "CSS"
   - "Gulp"
+  - "HTML"
   - "Jekyll"
-  - "Node.js"
-  - "npm"
-  - "SASS"
+  - "Node"
 software:
-  - "Atom"
   - "Git"
   - "GitHub"
 ---

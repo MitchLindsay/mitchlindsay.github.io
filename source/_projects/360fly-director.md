@@ -13,16 +13,16 @@ screenshots:
   - image: "360fly-director-3"
     text: "Uploading to Social Media"
 technologies:
-  - "Browserify"
+  - "CSS"
   - "Electron"
   - "Gulp"
-  - "Node.js"
-  - "npm"
-  - "React/JSX"
-  - "SASS"
+  - "HTML"
+  - "Node"
+  - "React"
+  - "Redux"
   - "WiX Toolset"
 software:
-  - "Atom"
+  - "ExifTool"
   - "FFMPEG"
   - "Git"
   - "GitHub"
@@ -33,6 +33,6 @@ software:
   - "Visual Studio"
   - "WMI"
 ---
-+ [360fly Director](https://360fly.com/Director) is a desktop video player and editing suite for 360° panoramic video.
-+ The software is intended for use with the [360fly](https://shop.360fly.com/products/360fly) camera, but can be used with any 360° video.
++ [360fly Director](https://360fly.com/Director) is a desktop editing suite for 360° panoramic media.
++ The software is intended for use with the [360fly](https://shop.360fly.com/products/360fly) camera, but can be used with any supported files.
 + It is currently in development for both Windows and Mac with [Electron](http://electron.atom.io/) and [React](https://facebook.github.io/react/).

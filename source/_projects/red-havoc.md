@@ -18,7 +18,6 @@ software:
   - "Git"
   - "GitHub"
   - "Photoshop"
-  - "SourceTree"
   - "Unity3D"
   - "Visual Studio"
 ---
