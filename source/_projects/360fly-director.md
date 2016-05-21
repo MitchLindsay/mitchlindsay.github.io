@@ -34,5 +34,5 @@ software:
   - "WMI"
 ---
 + [360fly Director](https://360fly.com/Director) is a desktop editing suite for 360° panoramic media.
-+ This software is intended for use with the [360fly](https://shop.360fly.com/products/360fly) camera, but can be used with any supported video and image files.
++ This software is intended for use with the [360fly camera](https://shop.360fly.com/catalogue/), but can be used with any supported video and image files.
 + It is currently in development for both Windows and Mac with [Electron](http://electron.atom.io/) and [React](https://facebook.github.io/react/).
