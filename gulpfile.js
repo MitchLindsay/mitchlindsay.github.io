@@ -20,8 +20,10 @@ gulp.task('serve', function () {
   gulp.watch('static/**/*.*').on('change', browserSync.reload);
 });
 
+/* Use this for production builds */
 gulp.task('publish', ['clean', 'build-prod'], function() {
   exec('rake publish');
 });
 
+/* Use this for development builds & testing */
 gulp.task('default', ['clean', 'build-dev', 'serve']);
