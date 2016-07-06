@@ -29,9 +29,6 @@ priority: 2
           <a href="{{ job.website }}"><b>{{ job.company }}</b></a><br />
           <b>
             {{ job.position }}
-            {% if job.contract %}
-             (Contractor)
-            {% endif %}
           </b><br />
           {{ job.location }} | {{ job.start-date }} - {{ job.end-date }}<br />
         </div>
