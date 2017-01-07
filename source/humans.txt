@@ -5,4 +5,4 @@
 
 /* SITE */
 	Doctype: HTML5
-	IDE: Atom
+	IDE: VSCode

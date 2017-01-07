@@ -1,6 +1,6 @@
 # Site Info
 url: http://mitchlindsay.me
-enforce_ssl: mitchlindsay.github.io
+enforce_ssl: false #mitchlindsay.github.io
 title: Mitch Lindsay
 author: Mitch Lindsay
 description: The personal portfolio website of Mitch Lindsay
