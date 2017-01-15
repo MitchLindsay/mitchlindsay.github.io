@@ -4,22 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Mitch Lindsay">
   <meta name="keywords" content="Mitch Lindsay, Software Engineer, Portfolio">
-  <title>
-    {% if page.title %}
-      {{ page.title }} | {{ site.title }}
-    {% else %}
-      {{ site.title }}
-    {% endif %}
-  </title>
-  <meta
-    name="description"
-    content=
-      "{% if page.excerpt %}
-        {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
-      {% else %}
-        {{ site.description }}
-      {% endif %}">
-  {% stylesheet bootstrap.min.css %}
-  {% javascript bootstrap.min.js %}
-  {% javascript jquery.min.js %}
+  <meta name="description" content="{{ site.description }}">
+  <title>{{ site.title }}</title>
+  {% javascript jquery.min %}
+  {% javascript bootstrap.min %}
+  {% stylesheet main %}
 </head>

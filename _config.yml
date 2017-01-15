@@ -15,7 +15,9 @@ destination: ./static
 
 # Plugins
 gems: [
-  'jekyll-assets'
+  'jekyll-assets',
+  'sass',
+  'uglifier'
 ]
 
 # Assets Pipeline
@@ -23,7 +25,11 @@ assets:
   prefix:
     '/assets'
   sources:
-    - _assets/vendor
+    - _assets/scss
+    - _assets/js
+  compress:
+    css:  sass
+    js:   uglifier
 
 # Excluded from build
 exclude: [

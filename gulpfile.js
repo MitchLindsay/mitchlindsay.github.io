@@ -5,18 +5,19 @@ var shell = require('gulp-shell');
 
 gulp.task('clean', shell.task([
   'rm -rf ./static/',
-  'rm -rf ./source/_assets/vendor/',
   'rm -rf ./source/.asset-cache/',
-  'bundle exec jekyll clean'])
-);
+  'bundle exec jekyll clean'
+]));
 
 gulp.task('copy', function() {
   gulp.src('./node_modules/jquery/dist/jquery.min.js')
-    .pipe(gulp.dest('./source/_assets/vendor/'));
-  gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
-    .pipe(gulp.dest('./source/_assets/vendor/'));
-  gulp.src('./node_modules/bootstrap/dist/css/bootstrap.min.css')
-    .pipe(gulp.dest('./source/_assets/vendor/'));
+    .pipe(gulp.dest('./source/_assets/js/'));
+  gulp.src('./node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js')
+    .pipe(gulp.dest('./source/_assets/js/'));
+  gulp.src('./node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss')
+    .pipe(gulp.dest('./source/_assets/scss/'));
+  gulp.src('./node_modules/bootstrap-sass/assets/stylesheets/bootstrap/**')
+    .pipe(gulp.dest('./source/_assets/scss/bootstrap/'));
 });
 
 gulp.task('build-prod', shell.task(['JEKYLL_ENV=production bundle exec jekyll build']));
@@ -29,6 +30,6 @@ gulp.task('serve', function () {
 });
 
 /* Use this for production builds */
-gulp.task('publish', ['clean', 'copy', 'build-prod'], function() { exec('rake publish'); });
+gulp.task('publish', ['clean', 'build-prod'], function() { exec('rake publish'); });
 /* Use this for development builds & testing */
-gulp.task('default', ['clean', 'copy', 'build-dev', 'serve']);
+gulp.task('default', ['clean', 'build-dev', 'serve']);

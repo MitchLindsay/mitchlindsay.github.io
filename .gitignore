@@ -3,4 +3,6 @@
 node_modules
 static
 content
-source/_assets/vendor
+source/_assets/js
+source/_assets/scss/_bootstrap.scss
+source/_assets/scss/bootstrap
