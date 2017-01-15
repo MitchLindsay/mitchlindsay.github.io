@@ -1,5 +1,6 @@
 .asset-cache
 .jekyll-metadata
-.sass-cache
 node_modules
 static
+content
+source/_assets/vendor

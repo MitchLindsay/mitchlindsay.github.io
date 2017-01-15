@@ -1,7 +1,7 @@
 /* TEAM */
   Developer: Mitch Lindsay
   Email: work@mitchlindsay.me
-  From: Pittsburgh, PA, USA
+  From: Pittsburgh, PA
 
 /* SITE */
 	Doctype: HTML5

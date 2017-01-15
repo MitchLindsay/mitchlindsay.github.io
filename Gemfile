@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 
-gem 'jekyll-assets'
-gem 'sass'
-gem 'font-awesome-sass'
-gem 'uglifier'
+gem 'bundler', '1.13.7'
+gem 'jekyll', '3.3.1'
+gem 'jekyll-assets', '2.2.8'

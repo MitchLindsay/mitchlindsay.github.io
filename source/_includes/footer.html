@@ -1,37 +1,5 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <div class="container-fluid text-center">
-      <div class="row-fluid">
-        <div class="col-xs-12">
-          <!-- Contact Links -->
-          {% assign sorted-contacts = site.contacts | sort: "priority" %}
-          {% for contact in sorted-contacts %}
-            {% if contact.title == "Email" %}
-              <a role="button" class="btn btn-primary" href="mailto:{{ contact.url }}">
-                <i class="fa {{ contact.icon }} fa-fw"></i>&nbsp; {{ contact.title }}
-              </a>
-            {% else %}
-              <a role="button" class="btn btn-primary" href="{{ contact.url }}">
-                <i class="fa {{ contact.icon }} fa-fw"></i>&nbsp; {{ contact.title }}
-              </a>
-            {% endif %}
-          {% endfor %}
-          <!-- Download Links -->
-          {% assign sorted-downloads = site.downloads | sort: "priority" %}
-          {% for download in sorted-downloads %}
-            {% if download.available %}
-              <a role="button" class="btn btn-primary" href="{{ download.url }}">
-                <i class="fa {{ download.icon }} fa-fw"></i>&nbsp; {{ download.title }}
-              </a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-      <div class="row-fluid">
-        <div class="col-xs-12">
-          <span class="copyright">Copyright &copy; {{ site.time | date: "%Y" }} {{ site.author }}</span>
-        </div>
-      </div>
-    </div>
+    Footer
   </div>
 </footer>

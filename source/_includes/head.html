@@ -1,19 +1,9 @@
 <head>
-  <!-- Redirect users to secure version of the site -->
-  {% if site.enforce_ssl %}
-    <script type="text/javascript">
-      var enforce = "{{ site.enforce_ssl }}";
-      if ((enforce == window.location.host) && (window.location.protocol != "https:"))
-        window.location = window.location.toString().replace(/^http:, "https:");
-    </script>
-  {% endif %}
-  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Mitch Lindsay">
   <meta name="keywords" content="Mitch Lindsay, Software Engineer, Portfolio">
-
   <title>
     {% if page.title %}
       {{ page.title }} | {{ site.title }}
@@ -21,7 +11,6 @@
       {{ site.title }}
     {% endif %}
   </title>
-
   <meta
     name="description"
     content=
@@ -30,12 +19,7 @@
       {% else %}
         {{ site.description }}
       {% endif %}">
-
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="shortcut icon" type="image/x-icon" href="{% asset_path icons/'{{ site.favicon }}' %}" />
-  <link rel="apple-touch-icon" type="image/png" href="{% asset_path icons/'{{ site.favicon }}' %}" >
-
-  {% stylesheet main %}
-  {% javascript jquery.min %}
-  {% javascript bootstrap.min %}
+  {% stylesheet bootstrap.min.css %}
+  {% javascript bootstrap.min.js %}
+  {% javascript jquery.min.js %}
 </head>
