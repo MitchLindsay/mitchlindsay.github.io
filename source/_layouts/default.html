@@ -3,9 +3,14 @@
   {% include head.html %}
   <body>
     {% include header.html %}
-    <div class="page-content">
+    <div class="content-area">
       <div class="wrapper">
-        {{ content }}
+        {% include about.html %}
+        {% include career.html %}
+        {% include projects.html %}
+        {% include skills.html %}
+        {% include education.html %}
+        {% include contact.html %}
       </div>
     </div>
     {% include footer.html %}

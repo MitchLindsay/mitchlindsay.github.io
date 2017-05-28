@@ -1,20 +1,22 @@
 # Site Info
-url: http://mitchlindsay.me
-title: Mitch Lindsay
-author: Mitch Lindsay
-description: The personal portfolio website of Mitch Lindsay
+url:          https://www.mitchlindsay.me
+title:        Mitch Lindsay
+author:       Mitch Lindsay
+description:  The personal portfolio website of Mitch Lindsay
 
 # Global Settings
-markdown: kramdown
-permalink: pretty
-encoding: UTF-8
+markdown:   kramdown
+permalink:  pretty
+encoding:   UTF-8
 
 # Server Settings
-source: ./source
-destination: ./static
+source:       ./source
+destination:  ./static
 
 # Plugins
 gems: [
+  'bootstrap-sass',
+  'font-awesome-sass',
   'jekyll-assets',
   'sass',
   'uglifier'
@@ -25,6 +27,7 @@ assets:
   prefix:
     '/assets'
   sources:
+    - _assets/fonts
     - _assets/scss
     - _assets/js
   compress:
