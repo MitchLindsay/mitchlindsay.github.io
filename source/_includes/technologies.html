@@ -1,0 +1,22 @@
+<!-- Technologies Section -->
+<section id="technologies">
+  <div class="container-fluid">
+    <h3>Technologies & Software</h3>
+    <hr/>
+    {% assign sorted-technologies = site.technologies | sort: "order" %}
+    {% for technology in sorted-technologies %}
+
+      <!-- Technology Categories -->
+      <div class="row">
+        <div class="col-xs-12">
+          <b>{{ technology.name }}:</b>
+          {% for item in technology.items %}
+            {{ item }}{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+
+    {% endfor %}
+    <hr/>
+  </div>
+</section>

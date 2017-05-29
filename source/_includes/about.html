@@ -1,4 +1,23 @@
 <!-- About Section -->
-<section id="about">
-  <h2>About</h2>
+<section id="#">
+  <div class="container-fluid">
+    <h3>About Me</h3>
+    <hr/>
+    {% assign abouts = site.abouts %}
+    {% for about in abouts %}
+
+      <!-- Information About Me -->
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            {% for item in about.list %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <hr/>
+
+    {% endfor %}
+  </div>
 </section>

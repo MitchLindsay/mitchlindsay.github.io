@@ -4,6 +4,14 @@ title:        Mitch Lindsay
 author:       Mitch Lindsay
 description:  The personal portfolio website of Mitch Lindsay
 
+# Collections
+collections:
+  - abouts
+  - jobs
+  - technologies
+  - schools
+  - contacts
+
 # Global Settings
 markdown:   kramdown
 permalink:  pretty
