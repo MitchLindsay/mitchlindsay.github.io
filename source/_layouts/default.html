@@ -5,11 +5,12 @@
     {% include header.html %}
     <div class="content-area">
       <div class="wrapper">
-        {% include about.html %}
-        {% include career.html %}
-        {% include technologies.html %}
-        {% include education.html %}
-        {% include contact.html %}
+        <div class="page-content">
+          {% include summary.html %}
+          {% include work.html %}
+          {% include technologies.html %}
+          {% include education.html %}
+        </div>
       </div>
     </div>
     {% include footer.html %}

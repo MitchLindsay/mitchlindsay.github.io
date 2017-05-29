@@ -1,26 +1,33 @@
-<!-- Career Section -->
-<section id="career">
+<!-- Work Section -->
+<section id="work">
   <div class="container-fluid">
-    <h3>Career</h3>
-    <hr/>
+    <h4><i class="fa fa-briefcase fa-fw"></i>&nbsp; Work Experience</h4>
+    <hr class="section-header"/>
     {% assign sorted-jobs = site.jobs | sort: "order" %}
     {% for job in sorted-jobs reversed %}
 
       <!-- Job Information -->
       <div id="{{ job.company }}">
 
-        <!-- Company Name, Position, Location, and Start/End Dates -->
+        <!-- Job Position and Start/End Dates -->
         <div class="row">
           <div class="col-xs-12">
-            <b>{{ job.position }}</b> | {{ job.start-date }} - {{ job.end-date }}<br/>
-            <a href="{{ job.website }}">{{ job.company }}</a> - {{ job.location }}<br/>
+            <b>{{ job.position }}</b>
+            <span class="pull-right">{{ job.start-date }} – {{ job.end-date }}</span>
+          </div>
+        </div>
+
+        <!-- Company Name and Location -->
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="{{ job.website }}">{{ job.company }}</a> – {{ job.location }}<br/>
           </div>
         </div>
 
         <!-- Job Summary -->
         <div class="row">
           <div class="col-xs-12">
-            {{ job.summary }}
+            <p class="job-summary">{{ job.summary }}</p>
           </div>
         </div>
 
@@ -36,8 +43,9 @@
         </div>
 
       </div>
-      <hr/>
+      {% unless forloop.last %}<hr/>{% endunless %}
 
     {% endfor %}
+    <br/>
   </div>
 </section>

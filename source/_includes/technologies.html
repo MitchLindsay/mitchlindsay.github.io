@@ -1,8 +1,8 @@
 <!-- Technologies Section -->
 <section id="technologies">
   <div class="container-fluid">
-    <h3>Technologies & Software</h3>
-    <hr/>
+    <h4><i class="fa fa-wrench fa-fw"></i>&nbsp; Technologies & Software</h4>
+    <hr class="section-header"/>
     {% assign sorted-technologies = site.technologies | sort: "order" %}
     {% for technology in sorted-technologies %}
 
@@ -17,6 +17,6 @@
       </div>
 
     {% endfor %}
-    <hr/>
+    <br/>
   </div>
 </section>

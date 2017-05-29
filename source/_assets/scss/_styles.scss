@@ -29,7 +29,7 @@ body {
   font-feature-settings:          "kern" 1;
   font-kerning:                   normal;
   font-size:                      $font-size;
-  font-weight:                    $font-weight;
+  line-height:                    $font-size * 1.5;
   margin:                         0;
   padding:                        0;
 }
@@ -56,14 +56,53 @@ dl, dd, ol, ul, figure {
   @extend %clearfix;
 }
 
-ul, ol {
-  margin-left: $spacing-unit;
+.page-content {
+  margin-bottom:  $footer-height;
+  padding:        $spacing-unit 0;
+}
+
+a {
+  color:            $red-color;
+  text-decoration:  none;
+
+  &:visited {
+    color: $red-color;
+  }
+
+  &:hover {
+    color:            $red-color;
+    text-decoration:  underline;
+  }
 }
 
 li {
-  > ul, > ol {
-    margin-bottom: 0;
-  }
+  margin-left: $spacing-unit / 2;
+}
+
+li.contact-link {
+  margin-left: 0;
+}
+
+hr {
+  margin-bottom:  $spacing-unit / 2;
+  margin-top:     $spacing-unit / 2;
+}
+
+hr.section-header {
+  border-color: $black-color;
+}
+
+p.job-summary {
+  margin-bottom: $spacing-unit / 2;
+  margin-top:    $spacing-unit / 2;
+}
+
+section {
+  margin-bottom: $spacing-unit;
+}
+
+.copyright {
+  line-height: 2;
 }
 
 %clearfix {
@@ -79,7 +118,6 @@ li {
   background-color: $black-color;
   bottom:           0;
   color:            $grey-color;
-  font-size:        $small-font-size;
   min-height:       $footer-height;
   padding:          $spacing-unit 0;
   position:         absolute;

@@ -1,8 +1,8 @@
 <!-- Education Section -->
 <section id="education">
   <div class="container-fluid">
-    <h3>Education</h3>
-    <hr/>
+    <h4><i class="fa fa-graduation-cap fa-fw"></i>&nbsp; Education</h4>
+    <hr class="section-header"/>
     {% assign sorted-schools = site.schools | sort: "order" %}
     {% for school in sorted-schools reversed %}
 
@@ -12,19 +12,21 @@
       <!-- Degree, Major, and Attendance Dates -->
       <div class="row">
         <div class="col-xs-12">
-          <b>{{ school.degree }} {{ school.major }}</b> |
-          {% if school.graduated == true %}
-            Graduated {{ school.end-date }}
-          {% else %}
-            {{ school.start-date }} - {{ school.end-date }}
-          {% endif %}
+          <b>{{ school.degree }} {{ school.major }}</b>
+          <span class="pull-right">
+            {% if school.graduated == true %}
+              Graduated {{ school.end-date }}
+            {% else %}
+              {{ school.start-date }} - {{ school.end-date }}
+            {% endif %}
+          </span>
         </div>
       </div>
 
       <!-- School Name and Location -->
       <div class="row">
         <div class="col-xs-12">
-          <a href="{{ school.website }}">{{ school.name }}</a> - {{ school.location}}<br />
+          <a href="{{ school.website }}">{{ school.name }}</a> – {{ school.location}}<br />
         </div>
       </div>
 
@@ -36,10 +38,11 @@
           </div>
         </div>
       {% endif %}
-      <hr/>
+      {% unless forloop.last %}<hr/>{% endunless %}
 
     </div>
 
     {% endfor %}
+    <br/>
   </div>
 </section>

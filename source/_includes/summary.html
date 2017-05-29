@@ -1,0 +1,35 @@
+<!-- Main Section -->
+<section id="#">
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <p>Hi, I'm Mitch!</p>
+      <p>
+        {% for job in site.jobs %}
+          {% if job.end-date == "Present" %}
+            I'm a {{ job.position | downcase }} currently working at <a href="{{ job.website }}">{{ job.company }}</a>.
+          {% endif %}
+        {% endfor %}
+      </p>
+    </div>
+    <br/>
+
+    <h4><i class="fa fa-info-circle fa-fw"></i>&nbsp; Summary</h4>
+    <hr class="section-header"/>
+    {% assign summaries = site.summaries %}
+    {% for summary in summaries %}
+
+      <!-- Summary Information -->
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            {% for item in summary.list %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+    {% endfor %}
+    <br/>
+  </div>
+</section>
