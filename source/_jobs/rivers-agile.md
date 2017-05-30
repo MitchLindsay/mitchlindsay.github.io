@@ -13,5 +13,5 @@ responsibilities:
 - "Adheres to Agile methodology and workflow with Git, GitHub, and JIRA"
 - "Provides client with estimates, design, and scope of new features"
 - "Created custom admin portal for client to generate and manage customer accounts"
-- "Implemented automated report system that sends emails to customers as chosen intervals"
+- "Implemented automated report system that sends emails to customers at chosen intervals"
 ---

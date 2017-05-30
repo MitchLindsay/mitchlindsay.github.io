@@ -16,16 +16,18 @@
             <!-- Contact Links -->
             {% assign sorted-contacts = site.contacts | sort: "order" %}
             {% for contact in sorted-contacts %}
-              {% if contact.title == "Email" %}
-                {% assign link-prefix = "mailto:" %}
-              {% else %}
-                {% assign link-prefix = "" %}
-              {% endif %}
-              <li class="contact-link">
-                <a href="{{ link-prefix }}{{ contact.website }}">
-                  <i class="fa {{ contact.icon }} fa-fw"></i>&nbsp; {{ contact.title }}
-                </a>
-              </li>
+              {% unless contact.website == "#" %}
+                {% if contact.title == "Email" %}
+                  {% assign link-prefix = "mailto:" %}
+                {% else %}
+                  {% assign link-prefix = "" %}
+                {% endif %}
+                <li class="contact-link">
+                  <a href="{{ link-prefix }}{{ contact.website }}">
+                    <i class="fa {{ contact.icon }} fa-fw"></i>&nbsp; {{ contact.title }}
+                  </a>
+                </li>
+              {% endunless %}
             {% endfor %}
           </ul>
         </div>
