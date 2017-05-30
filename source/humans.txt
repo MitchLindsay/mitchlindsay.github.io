@@ -1,6 +1,6 @@
 /* TEAM */
   Developer: Mitch Lindsay
-  Email: work@mitchlindsay.me
+  Email: mail@mitchlindsay.me
   From: Pittsburgh, PA
 
 /* SITE */
