@@ -1,7 +1,6 @@
 ---
-title: GitHub
+order: 3
+title: "GitHub"
 icon: fa-github-square
-priority: 3
-url: "https://www.github.com/mitchlindsay"
-phrase: "check out my contributions on"
+website: "https://www.github.com/mitchlindsay"
 ---

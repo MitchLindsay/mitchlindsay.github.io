@@ -1,4 +1,5 @@
 ---
+order: 1
 name: "Saint Vincent College"
 start-date: "2009"
 end-date: "2012"
@@ -7,7 +8,6 @@ degree: "B.S."
 major: "Computing & Information Science"
 concentration: "Computer Science"
 location: "Latrobe, PA"
-photo: "svc-photo"
 website: "http://www.stvincent.edu/"
 coursework:
   - Computing & Information Sciences I & II

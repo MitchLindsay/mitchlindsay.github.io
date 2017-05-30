@@ -1,47 +1,50 @@
 # Site Info
-url: http://mitchlindsay.me
-enforce_ssl: false #mitchlindsay.github.io
-title: Mitch Lindsay
-author: Mitch Lindsay
-description: The personal portfolio website of Mitch Lindsay
-favicon: favicon.ico
-portrait: portfolio-photo
-portrait-text: "I'm actually a cat in disguise!"
-construction: false
+url:          https://www.mitchlindsay.me
+title:        Mitch Lindsay's Portfolio
+author:       Mitch Lindsay
+description:  The personal portfolio website of Mitch Lindsay
+
+# Collections
+collections:
+  - summaries
+  - jobs
+  - technologies
+  - schools
+  - contacts
 
 # Global Settings
-markdown: kramdown
-permalink: pretty
-encoding: UTF-8
+markdown:   kramdown
+permalink:  pretty
+encoding:   UTF-8
 
 # Server Settings
-source: ./source
-destination: ./static
+source:       ./source
+destination:  ./static
 
 # Plugins
 gems: [
+  'bootstrap-sass',
+  'font-awesome-sass',
   'jekyll-assets',
   'sass',
-  'font-awesome-sass',
   'uglifier'
 ]
 
 # Assets Pipeline
 assets:
   prefix:
-    "/assets"
+    '/assets'
   sources:
-    - _assets/documents
     - _assets/fonts
-    - _assets/images
-    - _assets/javascripts
-    - _assets/stylesheets
+    - _assets/img
+    - _assets/scss
+    - _assets/js
   compress:
     css:  sass
     js:   uglifier
   features:
     automatic_img_size: false
-    automatic_img_alt: false
+    automatic_img_alt:  false
 
 # Excluded from build
 exclude: [
@@ -54,11 +57,3 @@ exclude: [
   'Rakefile',
   'README.md'
 ]
-
-# Collections
-collections:
-  - jobs
-  - projects
-  - schools
-  - contacts
-  - downloads

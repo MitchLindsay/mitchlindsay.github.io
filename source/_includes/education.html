@@ -1,0 +1,48 @@
+<!-- Education Section -->
+<section id="education">
+  <div class="container-fluid">
+    <h4><i class="fa fa-graduation-cap fa-fw"></i>&nbsp; Education</h4>
+    <hr class="section-header"/>
+    {% assign sorted-schools = site.schools | sort: "order" %}
+    {% for school in sorted-schools reversed %}
+
+    <!-- School Info -->
+    <div id="{{ school.name }}">
+
+      <!-- Degree, Major, and Attendance Dates -->
+      <div class="row">
+        <div class="col-xs-12">
+          <b>{{ school.degree }} {{ school.major }}</b>
+          <span class="pull-right">
+            {% if school.graduated == true %}
+              Graduated {{ school.end-date }}
+            {% else %}
+              {{ school.start-date }} - {{ school.end-date }}
+            {% endif %}
+          </span>
+        </div>
+      </div>
+
+      <!-- School Name and Location -->
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="{{ school.website }}">{{ school.name }}</a> – {{ school.location}}<br />
+        </div>
+      </div>
+
+      <!-- Area of Study -->
+      {% if school.concentration %}
+        <div class="row">
+          <div class="col-xs-12">
+            Concentration: {{ school.concentration }}
+          </div>
+        </div>
+      {% endif %}
+      {% unless forloop.last %}<hr/>{% endunless %}
+
+    </div>
+
+    {% endfor %}
+    <br/>
+  </div>
+</section>
