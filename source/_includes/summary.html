@@ -2,16 +2,16 @@
 <section id="#">
   <div class="container-fluid">
     <div class="jumbotron">
-      <p>Hi, I'm Mitch!</p>
       <p>
         {% for job in site.jobs %}
           {% if job.end-date == "Present" %}
-            I'm a {{ job.position | downcase }} currently working at <a href="{{ job.website }}">{{ job.company }}</a>.
+            I'm Mitch, a {{ job.position | downcase }} currently working at
+            <a href="{{ job.website }}">{{ job.company }}</a>.
           {% endif %}
         {% endfor %}
       </p>
+      {% image photo-portfolio class:'img-responsive img-rounded center-block' %}
     </div>
-    <br/>
 
     <h4><i class="fa fa-info-circle fa-fw"></i>&nbsp; Summary</h4>
     <hr class="section-header"/>

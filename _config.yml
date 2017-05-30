@@ -36,11 +36,15 @@ assets:
     '/assets'
   sources:
     - _assets/fonts
+    - _assets/img
     - _assets/scss
     - _assets/js
   compress:
     css:  sass
     js:   uglifier
+  features:
+    automatic_img_size: false
+    automatic_img_alt:  false
 
 # Excluded from build
 exclude: [

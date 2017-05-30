@@ -80,7 +80,7 @@ li {
 }
 
 li.contact-link {
-  margin-left: 0;
+  margin-left:  0;
 }
 
 hr {
@@ -99,6 +99,12 @@ p.job-summary {
 
 section {
   margin-bottom: $spacing-unit;
+}
+
+div.jumbotron {
+  > p {
+    font-size: 18px;
+  }
 }
 
 .copyright {
