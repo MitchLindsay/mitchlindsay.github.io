@@ -8,5 +8,4 @@ items:
 - "Electron"
 - "Node.js"
 - "Ruby on Rails"
-- "Unity"
 ---
