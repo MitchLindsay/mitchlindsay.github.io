@@ -4,5 +4,5 @@ name: "DevOps"
 items:
 - "Git"
 - "Docker"
-- "AWS (Amazon Web Services)"
+- "AWS"
 ---
