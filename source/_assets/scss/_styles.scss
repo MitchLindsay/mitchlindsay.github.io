@@ -34,6 +34,13 @@ body {
   padding:                        0;
 }
 
+@media (max-width: 480px) {
+    .row .col-xs-12 > .pull-right {
+      display: block;
+      float: none !important;
+    }
+}
+
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {

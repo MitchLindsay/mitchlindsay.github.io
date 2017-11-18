@@ -7,6 +7,5 @@ items:
 - "Redux"
 - "Electron"
 - "Node.js"
-- "Ruby on Rails"
-- "Unity"
+- "Rails"
 ---
