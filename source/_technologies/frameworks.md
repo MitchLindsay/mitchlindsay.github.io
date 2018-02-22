@@ -2,10 +2,11 @@
 order: 2
 name: "Frameworks"
 items:
-- "AngularJS"
+- "Ruby on Rails"
 - "React"
 - "Redux"
+- "Typescript"
+- "AngularJS"
 - "Electron"
 - "Node.js"
-- "Rails"
 ---

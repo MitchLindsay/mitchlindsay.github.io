@@ -2,9 +2,8 @@
 order: 1
 name: "Languages"
 items:
-- "JavaScript"
-- "C#"
 - "Ruby"
+- "JavaScript"
 - "HTML"
 - "CSS"
 ---
