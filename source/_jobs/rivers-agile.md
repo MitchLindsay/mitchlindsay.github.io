@@ -10,7 +10,7 @@ summary: "Provides full-stack web application development for clients in a varie
 responsibilities:
  - "Currently developing a referral management application for Arcadia Healthcare Solutions, utilizing Ruby on Rails, React, Redux, and Typescript"
  - "Focused on API development and database architecture for Wellsite Report, a project management and reporting suite, using Ruby on Rails and AngularJS"
- - "As the sole developer, continued to provide support and build new features for 360fly Director remotely"
+ - "Continued to provide support and build new features for 360fly Director as the sole developer remotely"
  - "Coordinates in sprint planning, feature estimates, code reviews, and deployments"
  - "Adheres to agile methodology and workflow"
 ---
