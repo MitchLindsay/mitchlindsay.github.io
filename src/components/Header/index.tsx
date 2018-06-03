@@ -33,8 +33,8 @@ class Header extends React.Component<Props & WithStyles> {
         <AppBar position="static" color="primary">
           <Toolbar>
             <Typography
-              color="inherit"
               className={classes.flex}
+              color="inherit"
               variant="title"
             >
               Mitch Lindsay
