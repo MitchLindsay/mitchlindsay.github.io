@@ -20,7 +20,7 @@ const styles: StyleRules = {
   }
 };
 
-interface Props {
+export interface Props {
   height?: number;
 }
 
@@ -39,20 +39,18 @@ class Header extends React.Component<Props & WithStyles> {
             >
               Mitch Lindsay
             </Typography>
-            <div>
-              <IconButton
-                color="inherit"
-                href={`mailto:${constants.contactEmail}`}
-              >
-                <Email />
-              </IconButton>
-              <IconButton color="inherit" href={constants.githubUrl}>
-                <GithubCircle />
-              </IconButton>
-              <IconButton color="inherit" href={constants.linkedinUrl}>
-                <LinkedinBox />
-              </IconButton>
-            </div>
+            <IconButton
+              color="inherit"
+              href={`mailto:${constants.contactEmail}`}
+            >
+              <Email />
+            </IconButton>
+            <IconButton color="inherit" href={constants.githubUrl}>
+              <GithubCircle />
+            </IconButton>
+            <IconButton color="inherit" href={constants.linkedinUrl}>
+              <LinkedinBox />
+            </IconButton>
           </Toolbar>
         </AppBar>
       </div>
