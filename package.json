@@ -1,0 +1,110 @@
+{
+  "author": "Mitch Lindsay",
+  "dependencies": {
+    "@material-ui/core": "^1.1.0",
+    "@types/enzyme": "^3.1.10",
+    "@types/react": "^16.3.15",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-redux": "^6.0.1",
+    "@types/redux": "^3.6.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "mdi-material-ui": "^5.1.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.0.0",
+    "awesome-typescript-loader": "^5.0.0",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^0.14.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.1.0",
+    "jest-cli": "^23.1.0",
+    "jest-environment-enzyme": "^6.0.1",
+    "jest-enzyme": "^6.0.1",
+    "prettier": "^1.13.4",
+    "pretty-quick": "^1.6.0",
+    "redux-devtools": "^3.4.1",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.21.0",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^2.9.1",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "description": "The personal portfolio of Mitch Lindsay",
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "tmp/jest",
+    "coverageReporters": [
+      "html",
+      "lcovonly",
+      "text-summary"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!**/*.{d,spec}.{ts,tsx}",
+      "!**/node_modules/**"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "moduleDirectories": [
+      "<rootDir>/node_modules",
+      "<rootDir>/src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "moduleNameMapper": {
+      "@src\\/(.*)$": "<rootDir>/src/$1",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss)$": "identity-obj-proxy"
+    },
+    "roots": [
+      "<rootDir>/src/"
+    ],
+    "setupTestFrameworkScriptFile": "jest-enzyme",
+    "testEnvironment": "enzyme",
+    "testEnvironmentOptions": {
+      "enzymeAdapter": "react16"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "transform": {
+      "^.+\\.(t|j)sx?$": "ts-jest"
+    },
+    "unmockedModulePathPatterns": [
+      "react",
+      "enzyme",
+      "jest-enzyme"
+    ],
+    "verbose": true
+  },
+  "license": "MIT",
+  "main": "./src/index.tsx",
+  "name": "mitchlindsay.github.io",
+  "private": true,
+  "repository": "https://github.com/mitchlindsay/mitchlindsay.github.io.git",
+  "scripts": {
+    "lint": "tslint -p . -c tslint.json",
+    "precommit": "pretty-quick --staged",
+    "start": "webpack-dev-server --color",
+    "test": "tsc --noEmit -p . && jest"
+  },
+  "version": "3.0.0"
+}
