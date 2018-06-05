@@ -42,18 +42,6 @@
   },
   "description": "The personal portfolio of Mitch Lindsay",
   "jest": {
-    "collectCoverage": true,
-    "coverageDirectory": "tmp/jest",
-    "coverageReporters": [
-      "html",
-      "lcovonly",
-      "text-summary"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{ts,tsx}",
-      "!**/*.{d,spec}.{ts,tsx}",
-      "!**/node_modules/**"
-    ],
     "globals": {
       "ts-jest": {
         "tsConfigFile": "tsconfig.json"
