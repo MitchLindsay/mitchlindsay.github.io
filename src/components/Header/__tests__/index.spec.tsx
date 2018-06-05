@@ -1,5 +1,8 @@
+import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
 import Header, { Props } from '@src/components/Header';
+import constants from '@src/constants';
 import { shallow, ShallowWrapper } from 'enzyme';
+import { Account, Email, GithubCircle, LinkedinBox } from 'mdi-material-ui';
 import * as React from 'react';
 
 const mockProps: Props = {
@@ -29,7 +32,7 @@ describe('Header', () => {
     });
 
     it('has the correct className', () => {
-      expect(outerDiv.prop('className')).toContain('root');
+      expect(outerDiv.prop('className')).toContain('outerContainer');
     });
   });
 
@@ -37,7 +40,7 @@ describe('Header', () => {
     let appBar: ShallowWrapper;
 
     beforeEach(() => {
-      appBar = wrapper.find('WithStyles(AppBar)');
+      appBar = wrapper.find(AppBar);
     });
 
     it('renders correctly', () => {
@@ -57,7 +60,7 @@ describe('Header', () => {
     let toolbar: ShallowWrapper;
 
     beforeEach(() => {
-      toolbar = wrapper.find('WithStyles(Toolbar)');
+      toolbar = wrapper.find(Toolbar);
     });
 
     it('renders correctly', () => {
@@ -65,12 +68,27 @@ describe('Header', () => {
     });
   });
 
+  describe('Account Icon', () => {
+    let accountIcon: ShallowWrapper;
+
+    beforeEach(() => {
+      accountIcon = wrapper.find(Account);
+    });
+
+    it('renders correctly', () => {
+      expect(accountIcon.exists()).toEqual(true);
+    });
+
+    it('has the correct className', () => {
+      expect(accountIcon.prop('className')).toContain('titleIcon');
+    });
+  });
+
   describe('Typography', () => {
     let typography: ShallowWrapper;
 
     beforeEach(() => {
-      console.log(wrapper.debug());
-      typography = wrapper.find('WithStyles(Typography)');
+      typography = wrapper.find(Typography);
     });
 
     it('renders correctly', () => {
@@ -78,7 +96,7 @@ describe('Header', () => {
     });
 
     it('has the correct className', () => {
-      expect(typography.prop('className')).toContain('flex');
+      expect(typography.prop('className')).toContain('title');
     });
 
     it('has the correct color', () => {
@@ -91,6 +109,110 @@ describe('Header', () => {
 
     it('has the correct children', () => {
       expect(typography.prop('children')).toEqual('Mitch Lindsay');
+    });
+  });
+
+  describe('Email Icon Button', () => {
+    describe('Icon Button', () => {
+      let iconButton: ShallowWrapper;
+
+      beforeEach(() => {
+        iconButton = wrapper.find(IconButton).at(0);
+      });
+
+      it('renders correctly', () => {
+        expect(iconButton.exists()).toEqual(true);
+      });
+
+      it('has the correct color', () => {
+        expect(iconButton.prop('color')).toEqual('inherit');
+      });
+
+      it('has the correct href', () => {
+        expect(iconButton.prop('href')).toEqual(
+          `mailto:${constants.contactEmail}`
+        );
+      });
+    });
+
+    describe('Email Icon', () => {
+      let emailIcon: ShallowWrapper;
+
+      beforeEach(() => {
+        emailIcon = wrapper.find(Email);
+      });
+
+      it('renders correctly', () => {
+        expect(emailIcon.exists()).toEqual(true);
+      });
+    });
+  });
+
+  describe('GithubCircle Icon Button', () => {
+    describe('Icon Button', () => {
+      let iconButton: ShallowWrapper;
+
+      beforeEach(() => {
+        iconButton = wrapper.find(IconButton).at(1);
+      });
+
+      it('renders correctly', () => {
+        expect(iconButton.exists()).toEqual(true);
+      });
+
+      it('has the correct color', () => {
+        expect(iconButton.prop('color')).toEqual('inherit');
+      });
+
+      it('has the correct href', () => {
+        expect(iconButton.prop('href')).toEqual(constants.githubUrl);
+      });
+    });
+
+    describe('GithubCircle Icon', () => {
+      let githubCircleIcon: ShallowWrapper;
+
+      beforeEach(() => {
+        githubCircleIcon = wrapper.find(GithubCircle);
+      });
+
+      it('renders correctly', () => {
+        expect(githubCircleIcon.exists()).toEqual(true);
+      });
+    });
+  });
+
+  describe('LinkedinBox Icon Button', () => {
+    describe('Icon Button', () => {
+      let iconButton: ShallowWrapper;
+
+      beforeEach(() => {
+        iconButton = wrapper.find(IconButton).at(2);
+      });
+
+      it('renders correctly', () => {
+        expect(iconButton.exists()).toEqual(true);
+      });
+
+      it('has the correct color', () => {
+        expect(iconButton.prop('color')).toEqual('inherit');
+      });
+
+      it('has the correct href', () => {
+        expect(iconButton.prop('href')).toEqual(constants.linkedinUrl);
+      });
+    });
+
+    describe('LinkedinBox Icon', () => {
+      let linkedinBoxIcon: ShallowWrapper;
+
+      beforeEach(() => {
+        linkedinBoxIcon = wrapper.find(LinkedinBox);
+      });
+
+      it('renders correctly', () => {
+        expect(linkedinBoxIcon.exists()).toEqual(true);
+      });
     });
   });
 });

@@ -8,15 +8,18 @@ import {
 } from '@material-ui/core';
 import { StyleRules } from '@material-ui/core/styles';
 import constants from '@src/constants';
-import { Email, GithubCircle, LinkedinBox } from 'mdi-material-ui';
+import { Account, Email, GithubCircle, LinkedinBox } from 'mdi-material-ui';
 import * as React from 'react';
 
 const styles: StyleRules = {
-  flex: {
+  outerContainer: {
+    flexGrow: 1
+  },
+  title: {
     flex: 1
   },
-  root: {
-    flexGrow: 1
+  titleIcon: {
+    paddingRight: '0.5em'
   }
 };
 
@@ -29,11 +32,12 @@ class Header extends React.Component<Props & WithStyles> {
     const { classes } = this.props;
 
     return (
-      <div className={classes.root}>
+      <div className={classes.outerContainer}>
         <AppBar position="static" color="primary">
           <Toolbar>
+            <Account className={classes.titleIcon} />
             <Typography
-              className={classes.flex}
+              className={classes.title}
               color="inherit"
               variant="title"
             >

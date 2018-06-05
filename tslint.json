@@ -6,7 +6,7 @@
     "interface-name": [false],
     "jsx-boolean-value": ["never"],
     "jsx-no-lambda": true,
-    "max-line-length": [true, 80],
+    "max-line-length": [true, 100],
     "member-access": [true, "no-public"],
     "no-submodule-imports": [false],
     "quotemark": [
