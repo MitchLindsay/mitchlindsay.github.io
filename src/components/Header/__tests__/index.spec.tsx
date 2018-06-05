@@ -1,16 +1,12 @@
 import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
-import Header, { Props } from '@src/components/Header';
-import constants from '@src/constants';
+import Header from '@src/components/Header';
+import { contactEmail, githubUrl, linkedinUrl } from '@src/lib/constants';
 import { shallow, ShallowWrapper } from 'enzyme';
 import { Account, Email, GithubCircle, LinkedinBox } from 'mdi-material-ui';
 import * as React from 'react';
 
-const mockProps: Props = {
-  height: 50
-};
-
-const renderComponent = (optionalProps?: Partial<Props>) => {
-  return shallow(<Header {...mockProps} {...optionalProps} />);
+const renderComponent = () => {
+  return shallow(<Header />);
 };
 
 describe('Header', () => {
@@ -20,19 +16,19 @@ describe('Header', () => {
     wrapper = renderComponent().dive();
   });
 
-  describe('Outer Div', () => {
-    let outerDiv: ShallowWrapper;
+  describe('Container', () => {
+    let container: ShallowWrapper;
 
     beforeEach(() => {
-      outerDiv = wrapper.find('div').at(0);
+      container = wrapper.find('div').at(0);
     });
 
     it('renders correctly', () => {
-      expect(outerDiv.exists()).toEqual(true);
+      expect(container.exists()).toEqual(true);
     });
 
     it('has the correct className', () => {
-      expect(outerDiv.prop('className')).toContain('outerContainer');
+      expect(container.prop('className')).toContain('container');
     });
   });
 
@@ -129,9 +125,7 @@ describe('Header', () => {
       });
 
       it('has the correct href', () => {
-        expect(iconButton.prop('href')).toEqual(
-          `mailto:${constants.contactEmail}`
-        );
+        expect(iconButton.prop('href')).toEqual(`mailto:${contactEmail}`);
       });
     });
 
@@ -165,7 +159,7 @@ describe('Header', () => {
       });
 
       it('has the correct href', () => {
-        expect(iconButton.prop('href')).toEqual(constants.githubUrl);
+        expect(iconButton.prop('href')).toEqual(githubUrl);
       });
     });
 
@@ -199,7 +193,7 @@ describe('Header', () => {
       });
 
       it('has the correct href', () => {
-        expect(iconButton.prop('href')).toEqual(constants.linkedinUrl);
+        expect(iconButton.prop('href')).toEqual(linkedinUrl);
       });
     });
 

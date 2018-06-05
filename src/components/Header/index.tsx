@@ -7,12 +7,12 @@ import {
   WithStyles
 } from '@material-ui/core';
 import { StyleRules } from '@material-ui/core/styles';
-import constants from '@src/constants';
+import { contactEmail, githubUrl, linkedinUrl } from '@src/lib/constants';
 import { Account, Email, GithubCircle, LinkedinBox } from 'mdi-material-ui';
 import * as React from 'react';
 
 const styles: StyleRules = {
-  outerContainer: {
+  container: {
     flexGrow: 1
   },
   title: {
@@ -23,16 +23,12 @@ const styles: StyleRules = {
   }
 };
 
-export interface Props {
-  height?: number;
-}
-
-class Header extends React.Component<Props & WithStyles> {
+class Header extends React.Component<WithStyles> {
   render() {
     const { classes } = this.props;
 
     return (
-      <div className={classes.outerContainer}>
+      <div className={classes.container}>
         <AppBar position="static" color="primary">
           <Toolbar>
             <Account className={classes.titleIcon} />
@@ -43,16 +39,13 @@ class Header extends React.Component<Props & WithStyles> {
             >
               Mitch Lindsay
             </Typography>
-            <IconButton
-              color="inherit"
-              href={`mailto:${constants.contactEmail}`}
-            >
+            <IconButton color="inherit" href={`mailto:${contactEmail}`}>
               <Email />
             </IconButton>
-            <IconButton color="inherit" href={constants.githubUrl}>
+            <IconButton color="inherit" href={githubUrl}>
               <GithubCircle />
             </IconButton>
-            <IconButton color="inherit" href={constants.linkedinUrl}>
+            <IconButton color="inherit" href={linkedinUrl}>
               <LinkedinBox />
             </IconButton>
           </Toolbar>

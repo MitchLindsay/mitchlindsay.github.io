@@ -1,7 +1,8 @@
 import { ThemeOptions } from '@material-ui/core/styles/createMuiTheme';
 import createPalette from '@material-ui/core/styles/createPalette';
+import { colors } from '@src/lib';
 
-const theme: ThemeOptions = {
+export const theme: ThemeOptions = {
   overrides: {
     MuiTypography: {
       title: {
@@ -11,12 +12,10 @@ const theme: ThemeOptions = {
   },
   palette: createPalette({
     primary: {
-      main: '#E65551'
+      main: colors.red
     },
     secondary: {
-      main: '#2A2C2B'
+      main: colors.black
     }
   })
 };
-
-export default theme;
