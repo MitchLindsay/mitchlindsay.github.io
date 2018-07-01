@@ -4,7 +4,7 @@ company: "Rivers Agile"
 position: "Software Engineer"
 location: "Canonsburg, PA"
 start-date: "August 2015"
-end-date: "Present"
+end-date: "June 2018"
 website: "http://www.riversagile.com"
 summary: "Provides full-stack web application development for clients in a variety of industries"
 responsibilities:
