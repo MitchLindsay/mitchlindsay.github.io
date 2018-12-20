@@ -1,8 +1,0 @@
-/* TEAM */
-  Developer: Mitch Lindsay
-  Email: mail@mitchlindsay.me
-  From: Pittsburgh, PA
-
-/* SITE */
-	Doctype: HTML5
-	IDE: VSCode

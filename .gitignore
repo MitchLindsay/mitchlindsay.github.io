@@ -1,9 +1,5 @@
-.asset-cache
-.jekyll-metadata
-.vscode
+# Dependencies
 node_modules
-static
-content
-source/_assets/js
-source/_assets/scss/_bootstrap.scss
-source/_assets/scss/bootstrap
+
+# Log Files
+yarn-error.log
